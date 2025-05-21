@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velkommen til HAVBLINK</title>
+  <title>HAVBLINK - Besøg Os</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="besøg.css">
   <link rel="stylesheet" href="https://use.typekit.net/eyy5klc.css">
 </head>
 
 <body>
-
-    <header>
+    
+<header>
         <div class="header-container">
             <div class="havblink">
                 <a href="index.html">
@@ -24,9 +24,9 @@
                     <nav>
                         <ul class="pc-nav-links">
                             <li class="pc-dropdown">
-                                <span class="pc-menu-point">VINGÅRDEN</span>
+                                <span class="pc-menu-point active">VINGÅRDEN</span>
                                 <ul class="pc-menu">
-                                    <li><a href="besøg.html">BESØG VINGÅRDEN</a></li>
+                                    <li><a class="active" href="besøg.html">BESØG VINGÅRDEN</a></li>
                                     <li><a href="#">BEGIVENHEDER</a></li>
                                     <li><a href="#">MARK & VINERI</a></li>
                                     <li class="dropdown-a-bottom"><a href="#">ÅBNINGSTIDER</a></li>
@@ -85,13 +85,13 @@
                                 <li class="mobil-dropdown">
                                     <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle1">
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle1">
-                                    <span class="mobil-submenu-open">
+                                    <span class="mobil-submenu-open active">
                                         <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                         VINGÅRDEN
                                     </span>
                                     </label>
                                     <ul class="mobil-submenu" id="mobil-submenu1">
-                                        <li><a href="besøg.html">BESØG VINGÅRDEN</a></li>
+                                        <li><a class="active" href="besøg.html">BESØG VINGÅRDEN</a></li>
                                         <li><a href="#">BEGIVENHEDER</a></li>
                                         <li><a href="#">MARK & VINERI</a></li>
                                         <li><a href="#">ÅBNINGSTIDER</a></li>
@@ -177,81 +177,101 @@
 
     <main>
 
-        <div id="landing-hero">
-            <img src="images/hvidvinsglas2.jpg" alt="hvidvin og vinglas med havet i baggrunden">
-            <h1>NATURLIGT FRISK - FREMSTILLET I DANMARK</h1>
+        <div id="visit-hero">
+            <img src="images/vinmark9.jpg" alt="vinmarker">
+            <h1>KOM PÅ BESØG OG SE VINMARKERNE</h1>
         </div>
 
-        <div id="welcome-container">
+        <div id="visit-container">
+
             <div id="background-wave">
                 <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
                     <path class="cls-1" d="M1510.54,53c-10.31-8-27.83-15.89-40.31-19.99-23.65-7.7-48.31-11.78-73.01-14.36-396.67-47.61-345.05,237.22-816.59,57.8C421.36,15.92,245.71-43.04,85.72,43.92,54.88,59.84,25.76,79.68,0,103.09v67.87h1512V54.11c-.45-.38-.99-.75-1.46-1.11Z"/>
                 </svg>
             </div>
 
-            <div id="index-welcome">
-                <img src="assets/logo-seagreen.svg" alt="søgrønt havblink logo">
-                <p>
-                    Vin med udsigt. Ro med dybde. Smag med sjæl.
-                </p>
-                <br>
-                <p>
-                    Hos <span>HAVBLINK</span> skaber vi mere end vin - vi skaber oplevelser, der smager af sol, hav og nærvær.
-                </p>
-                <p> 
-                    Vores vingård ligger, hvor horisonten møder kysten, og naturen sætter tempoet. 
-                </p>
-                <p>
-                    Her dyrker vi hvidvine med karakter, friskhed og finesse - altid med respekt for klima, jord og det langsomme håndværk.
-                </p>
-                <p>    
-                    Udforsk vores udvalg af Solaris-baserede hvidvine - fra sprøde citrusnoter til solmoden tropisk fylde - og find din nye favorit. Eller oplev vinene dér, hvor de er skabt. 
-                </p>
-                <br>
-                <p>    
-                    Uanset om du besøger os for stilheden, smagen eller selskabet - 
-                    så er du hjerteligt velkommen.
-                </p>
-                <p> 
-                    <span>HAVBLINK</span> er vin med udsigt, og vi glæder os til at dele den med dig.
-                </p>
+            <div id="events-container">
+                <div id="events">
+                    <h4>
+                        ARRANGEMENTER I JULI
+                    </h4>
+                    <br>
+                    <p>
+                        2/7 - Vinmarksyoga
+                    </p>
+                    <p>
+                        6/7 - Vinsmagning
+                    </p>
+                    <p>
+                        7/7 - Guidet tur
+                    </p>
+                    <p>
+                        13/7 - Vinsmagning
+                    </p>
+                    <p>
+                        14/7 - Guidet tur
+                    </p>
+                    <p>
+                        16/6 - Vinmarksyoga
+                    </p>
+                    <p>
+                        20/7 - Vinsmagning
+                    </p>
+                    <p>
+                        21/7 - Guidet tur
+                    </p>
+                    <p>
+                        27/7 - Vinsmagning
+                    </p>
+                    <p>
+                        28/7 - Guidet tur
+                    </p>
+
+                    <a class="button" href="#">
+                        <span>
+                            BOOK NU
+                        </span>
+                    </a>
+                </div>
+
+                 <div id="events-img-wrapper" class="img-wrapper">
+                    <img src="images/vinmark11.jpg" alt="vinmark med druer">
+                </div>
             </div>
 
-            <a class="button" href="#">
-                <span>
-                    BESØG OS
-                </span>
-            </a>
         </div>
 
-        <div id="landing-content">
+        <div id="visit-content">
+
+            <h1>
+                VORES ARRANGEMENTER
+            </h1>
 
             <div class="info-container">
 
                 <div class="img-wrapper">
-                    <img src="images/druer6.jpg" alt="druer i solen">
+                    <img src="images/hvidvinsflaske7.jpg" alt="druer i solen">
                 </div>
 
                 <div class="text-wrapper">
                     <p>
-                        <span>Hos HAVBLINK tror vi på, at god vin</span> starter med god jord - og respekt for den. 
-                        Derfor arbejder vi med naturen, ikke imod den.
+                        <span class="start-text">
+                            Dyk ned i smagen af kyst, sol og kærlighed
+                        </span> 
+                        til håndværket. 
+                        Vores vinsmagninger giver dig mulighed for at opleve <span>HAVBLINK</span>s vine i rolige, smukke omgivelser - lige dér, hvor druerne gror.
                     </p>
                     <br>
                     <p>
-                        Vi bruger solenergi, lokale materialer og skånsomme metoder i mark og produktion for at minimere vores aftryk.
-                    </p>
-                    <p>
-                        Vores mål er at skabe vin, der ikke kun smager godt, men også gør godt - for mennesker, miljø og fremtidige generationer.
+                        Du kan vælge en klassisk vinsmagning med lette snacks, eller gøre aftenen komplet med en sæsonbaseret middag, hvor hver ret er nøje udvalgt til at fremhæve vinens karakter.
                     </p>
                     <br>
                     <p>
-                        Vil du vide mere om vores grønne tiltag og hvordan vi tænker bæredygtighed hele vejen fra drue til glas?
+                        Uanset hvad du vælger, guider vi dig igennem smagsnuancer, produktion og historier fra vinmarken. En sanselig oplevelse, der både oplyser og forkæler.
                     </p>
                     <br>
-
                     <a class="link-text" href="#">
-                        Læs mere om vores tilgang til bæredygtighed.
+                        Læs mere om vinsmagning og booking her.
                     </a>
                 </div>
 
@@ -274,41 +294,95 @@
                         LÆS MERE
                     </span>
                 </a>
-                
 
                 <div class="text-wrapper">
                     <p>
-                        <span>Hos HAVBLINK tror vi på, at vin</span> skal opleves med alle sanser - ikke kun smages, men mærkes, 
-                        dufte og deles. Derfor åbner vi vores døre og marker for dig, der vil tættere på vinens verden.
+                        <span class="start-text">
+                            Kom med bag kulisserne og oplev,
+                        </span> 
+                        hvordan vores vin bliver til - fra jord til glas. 
                     </p>
                     <br>
                     <p>
-                        Her kan du gå blandt vinstokkene, mærke havbrisen, og opleve hvordan natur, ro og håndværk smelter sammen.                        
+                        På vores guidede ture går vi gennem vinmarkerne og fortæller om druesorterne, den bæredygtige dyrkning og livet på vingården.                        
                     </p>
                     <br>
                     <p>
-                        Vi inviterer til vinsmagninger, guidede ture, vinmarksyoga og sæsonbaserede events – alt sammen med udsigt til hav og horisont.
+                        Du får et unikt indblik i arbejdet bag vinene og <span>HAVBLINK</span>s filosofi - alt sammen omgivet af havudsigt og ro. 
+                        Turen afsluttes naturligvis med en lille smagning, så du kan opleve resultatet på tungen.
                     </p>
                     <br>
                     <p>
-                        Hvad enten du søger viden, afslapning eller fællesskab, har vi en oplevelse, der passer til dig.
+                        Vil du gøre dagen ekstra særlig, kan turen kombineres med overnatning, vinsmagning og middag.
                     </p>
                     <br>
 
                     <a class="link-text" href="#">
-                        Læs mere om oplevelser hos HAVBLINK.
+                        Læs mere om rundvisning og tider her.
                     </a> 
+
                 </div>
                 
                 <div class="img-wrapper">
-                    <img src="images/vinmark5.jpg" alt="vinmark og hus">
+                    <img src="images/vinmark6.jpg" alt="vinmark og hus">
                 </div>
+
+            </div>
+
+            <div class="line"> 
+            </div>
+
+            <div class="info-container">
+
+                <div class="img-wrapper">
+                    <img src="images/vinmark3.jpg" alt="druer i solen">
+                </div>
+
+                <div class="text-wrapper">
+                    <p>
+                        <span class="start-text">
+                            Der er noget særligt
+                        </span> 
+                        ved at stå midt i vinmarken, mærke havbrisen og smage vinen dér, hvor den bliver skabt. 
+                    </p>
+                    <br>
+                    <p>
+                        Hos <span>HAVBLINK</span> byder vi dig velkommen til en rolig og smuk oplevelse fyldt med smag, nærvær og natur.
+                    </p>
+                    <br>
+                    <p>
+                        Uanset om du kommer for en smagning, en tur eller bare for stemningen - så glæder vi os til at se dig.
+                    </p>
+                    <br>
+                    <p>
+                        <span>
+                            Du kan finde os her:
+                        </span>
+                    </p>
+                    <p>
+                        Hellegårdsvej 267
+                    </p>
+                    <p>
+                        5700 Svendborg
+                    </p>
+                    <p>
+                        Danmark
+                    </p>
+
+                </div>
+
+                
+                <a class="button2" href="#">
+                    <span>
+                        LÆS MERE
+                    </span>
+                </a>
 
             </div>
 
         </div>
 
-                <!-- Tilføjet footer wave til <main>, for at undgå position:absolute i footer -->
+        <!-- Tilføjet footer wave til <main>, for at undgå position:absolute i footer -->
 
         <div id="footer-wave">
             <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
@@ -382,6 +456,35 @@
         </div>
     </footer>
 
-<!-- INDSÆT FOOTER -->
+    <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->
+
+    <script>
+        const menuToggle = document.getElementById('mobil-menu-toggle');
+        const hamburger = document.getElementById('hamburger');
+      
+        menuToggle.addEventListener('change', function () {
+          if (menuToggle.checked) {
+            hamburger.classList.add('open');
+          } else {
+            hamburger.classList.remove('open');
+          }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggles = document.querySelectorAll('.mobil-submenu-toggle');
+
+            toggles.forEach(toggle => {
+                toggle.addEventListener('change', () => {
+                    if (toggle.checked) {
+                        toggles.forEach(otherToggle => {
+                            if (otherToggle !== toggle) {
+                                otherToggle.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>

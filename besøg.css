@@ -1,0 +1,283 @@
+/*-------------------- HERO ---------------------*/
+
+#visit-hero {
+    width: 100%;
+}
+
+#visit-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#visit-hero h1 {
+    width: 910px;
+    position: absolute;
+    text-align: center;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 12px 0;
+    border-bottom: 2px solid #eee9e1;
+}
+
+/*------------------- EVENTS ------------------*/
+
+#visit-container {
+    background-color: #c7e4dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+#background-wave {
+    margin: -10% 0 -5px 0; /* for at få bølgen til at gå under footer uden et hvidt mellemrum*/
+    display: block; /* for at få bølgen til at fylde hele bredden af skærmen */
+    width: 100%;
+    height: auto;
+}
+
+#background-wave svg {
+    fill: #c7e4dc; /* farven på bølgen */
+}
+
+#events-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0 5% 0;
+    gap: 30%;
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+#events h4 {
+    font-weight: 600;
+    width: 370px;
+}
+
+#events p {
+    font-family: "playfair-display", serif;
+    line-height: 1.5;
+}
+
+.button {
+    margin: 30px 0 0 0;
+}
+
+#events-img-wrapper {
+    width: 420px;
+    height: 559px;
+    padding: 0;
+}
+
+/*------------------ CONTENT ------------------*/
+
+#visit-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+
+#visit-content h1 {
+    color: #57716f;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 50px 60px;
+    gap: 5%;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.text-wrapper span {
+    font-weight: 700;
+}
+
+.start-text { 
+    font-size: 16pt;
+}
+
+.link-text {
+    text-decoration: none;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #57716f;
+}
+
+.link-text:hover {
+    color: #efd7af;
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:1150px){
+    #visit-hero {
+        padding-top: 20px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #visit-hero h1 {
+        width: 880px;
+        top: 250px;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    #visit-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #visit-hero h1 {
+        width: 750px;
+        top: 270px;
+    }
+
+    #events-container {
+        width: 85%;
+        gap: 9%;
+    }
+
+    #events {
+        width: 250px;
+    }
+
+    #events-img-wrapper {
+        height: 450px;
+        width: 300px;
+    }
+
+    .img-wrapper { /*billedet skal helst være mindre på mindre skærme */
+        width: 310px;
+        height: 250px;
+    }
+
+    .start-text { 
+        font-size: 14pt;
+    }
+
+    .link-text {
+        font-size: 12pt;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    #visit-hero {
+        padding-top: 60px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #visit-hero h1 {
+        width: 500px;
+        top: 220px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+    }
+
+    #events {
+        width: 240px;
+        margin: 15px 0;
+    }
+
+    #events-img-wrapper {
+        height: 300px;
+        width: 170px;
+    }
+
+    .info-container {
+        margin: 40px 20px;
+    }
+
+    .img-wrapper {
+        width: 320px;
+        padding: 0 0 6% 0;
+    }
+
+    .text-wrapper span, .start-text { 
+        font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
+    }
+
+    .info-container {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    #info-container2 {
+        flex-direction: column-reverse; /* så det bliver billede - tekst - billede - tekst */
+    }
+
+    .link-text {
+        display: none; /* skjuler linket på mindre skærme og indsætter en knap i stedet */
+    }
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:530px){
+    #visit-hero h1 {
+        font-size: 17pt;
+        top: 180px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        width: 400px;
+        border-bottom: none;
+    }
+
+    #events-img-wrapper {
+        display: none;
+    }
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
+@media screen and (max-width:430px){
+    #visit-hero h1 {
+        font-size: 14pt;
+        width: 85%;
+        top: 155px;
+    }
+
+    #events {
+        width: 150px;
+    }
+
+    #events-img-wrapper {
+        display: none;
+    }
+
+    .img-wrapper {
+        width: 250px;
+        height: 200px;
+    }
+
+    .text-wrapper span, .start-text { 
+        font-size: 11pt;
+    }
+}

@@ -1,0 +1,236 @@
+/*-------------------- HERO ---------------------*/
+
+#landing-hero {
+    width: 100%;
+}
+
+#landing-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#landing-hero h1 {
+    width: 1080px;
+    position: absolute;
+    text-align: center;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 12px 0;
+    border-bottom: 2px solid #eee9e1;
+}
+
+/*------------------- VELKOMST ------------------*/
+
+#welcome-container {
+    background-color: #c7e4dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 4% 0;
+}
+
+#background-wave {
+    margin: -10% 0 -5px 0; /* for at få bølgen til at gå under footer uden et hvidt mellemrum*/
+    display: block; /* for at få bølgen til at fylde hele bredden af skærmen */
+    width: 100%;
+    height: auto;
+}
+
+#background-wave svg {
+    fill: #c7e4dc; /* farven på bølgen */
+}
+
+#index-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 4% 27%;
+}
+
+#index-welcome img {
+    width: 100%;
+    height: auto;
+    padding: 0 0 6% 0;
+}
+
+#index-welcome span { 
+    font-weight: 700; /* for at gøre HAVBLINKs navn mere fed */
+}
+
+/*------------------ CONTENT ------------------*/
+
+#landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 4% 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 60px;
+    gap: 5%;
+}
+
+#info-container2 {
+    margin-bottom: -10px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.text-wrapper span { 
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.link-text {
+    text-decoration: none;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #57716f;
+}
+
+.link-text:hover {
+    color: #efd7af;
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:1150px){
+    #landing-hero {
+        padding-top: 20px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #landing-hero h1 {
+        font-size: 30pt; /* da det er en lidt længere tekst, er den separat fra styles.css h1 */
+        width: 960px;
+        top: 250px;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    #landing-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #landing-hero h1 {
+        font-size: 25pt;
+        width: 750px;
+        border-bottom: none;
+    }
+
+    #index-welcome {
+        padding: 4% 23%;
+    }
+
+    .img-wrapper { /*billedet skal helst være mindre på mindre skærme */
+        width: 310px;
+        height: 250px;
+    }
+
+    .text-wrapper span { 
+        font-size: 14pt;
+    }
+
+    .link-text {
+        font-size: 12pt;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    #landing-hero {
+        padding-top: 60px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #landing-hero h1 {
+        font-size: 20pt;
+        width: 90%;
+        top: 220px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+    }
+
+    #welcome-container {
+        padding: 0 0 6% 0; /* justerer størrelsen på den blå baggrund, så knappens nederste kan ikke er for tæt på den sandfarvede baggrund */
+    }
+
+    #index-welcome {
+        padding: 4% 19%; /* teksten må gerne fylde lidt mere af skærmen på mindre skærme */
+    }
+
+    .img-wrapper {
+        width: 320px;
+        padding: 0 0 6% 0;
+    }
+
+    .text-wrapper span { 
+        font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
+    }
+
+    .info-container {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    #info-container2 {
+        flex-direction: column-reverse; /* så det bliver billede - tekst - billede - tekst */
+    }
+
+    .link-text {
+        display: none; /* skjuler linket på mindre skærme og indsætter en knap i stedet */
+    }
+
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:530px){
+    #landing-hero h1 {
+        font-size: 17pt;
+        top: 190px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+    }
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
+@media screen and (max-width:430px){
+    #landing-hero h1 {
+        font-size: 14pt;
+        width: 85%;
+        top: 155px;
+    }
+
+    .img-wrapper {
+        width: 250px;
+        height: 200px;
+    }
+
+    .text-wrapper span { 
+        font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
+        font-size: 11pt;
+    }
+}

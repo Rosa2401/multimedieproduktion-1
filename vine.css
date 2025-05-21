@@ -96,7 +96,7 @@ body {
     display: block;
 }
 
-/*------------------ VINE REPSONSIV ------------------*/
+/*------------------ VINE REPSONSIVE ------------------*/
 
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
 
@@ -156,6 +156,7 @@ body {
 }
 
 /*------------------ EKSTRA H1 ------------------*/
+
 @media screen and (max-width:530px){
     #vine-hero h1 {
         width: 60%;
@@ -163,7 +164,7 @@ body {
     }
 }
 
-/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
     #vine-hero h1 {

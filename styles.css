@@ -1,4 +1,4 @@
-/*------- GENERELLE STYLES -------*/
+/*------- GENERAL STYLES -------*/
 
 * {
     margin: 0;
@@ -58,6 +58,10 @@ a:hover {
     color: #efd7af;
 }
 
+.text-wrapper span { 
+    font-weight: 700;
+}
+
 /*------------------ RESPONSIVE STYLES ------------------*/
 
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
@@ -111,18 +115,19 @@ a:hover {
 
 }
 
-/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
 @media screen and (max-width:430px){
     h1 {
-        font-size: 15pt;
+        font-size: 14pt;
     }
     
     h2 {
-        font-size: 15pt;
+        font-size: 14pt;
     }
     
     h3 {
-        font-size: 15pt;
+        font-size: 13pt;
     }
     
     h4 {
@@ -132,6 +137,22 @@ a:hover {
     p {
         font-size: 10pt;
     }
+}
+
+/* ---------------------- IMAGES ---------------------- */
+
+.img-wrapper { /* en img-wrapper for at kunne justere billedet lettere, når jeg når til responsivt design */
+    display: flex;
+    flex-shrink: 0;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* ---------------------- BUTTONS ---------------------- */
@@ -168,6 +189,14 @@ a:hover {
     transition: 0.2s ease-in-out; 
 }
 
+/*---------------------- LINES ---------------------- */
+
+.line {
+    border-bottom: #57716f 2px solid;
+    padding: 0 10%;
+    width: 80%;
+}
+
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
 
 @media screen and (max-width:1024px){
@@ -190,21 +219,14 @@ a:hover {
     }
 }
 
-/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
 @media screen and (max-width:430px){
     .button, .button2 {
         padding: 11px 30px;
         font-weight: 500pt;
         font-size: 10pt;
     }
-}
-
-/*---------------------- LINES ---------------------- */
-
-.line {
-    border-bottom: #57716f 2px solid;
-    padding: 0 10%;
-    width: 80%;
 }
 
 /* ---------------------- HEADER ---------------------- */
@@ -623,7 +645,7 @@ nav ul {
     }
   }
 
-/* ------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
   @media screen and (max-width: 430px) {
     header {
@@ -804,7 +826,8 @@ footer a:hover {
 
 }
 
-/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
 @media screen and (max-width:430px){
     
     #footer-container {

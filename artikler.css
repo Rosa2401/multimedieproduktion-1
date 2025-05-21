@@ -10,30 +10,28 @@
     object-fit: cover;
 }
 
-#artikler-hero h1 {
-    width: 300px;
+#artikler-hero h1,
+#artikler-hero p {
     position: absolute;
     text-align: center;
-    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
-    border-bottom: 2px solid #eee9e1;
     color: #eee9e1;
+}
+
+#artikler-hero h1 {
+    width: 300px;
+    top: 220px;
+    border-bottom: 2px solid #eee9e1;
 }
 
 #artikler-hero p {
     width: 350px;
-    position: absolute;
-    text-align: center;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    color: #eee9e1;
+    top: 300px;
 }
 
-#artikler-hero span, #news-info span { 
+#news-info span { 
     font-weight: 700; /* for at gøre HAVBLINKs navn mere fed */
 }
 
@@ -80,20 +78,6 @@
     background-color: #eee9e1;
 }
 
-.img-wrapper { /* en img-wrapper for at kunne justere billedet lettere, når jeg når til responsivt design */
-    display: flex;
-    flex-shrink: 0;
-    width: 450px;
-    height: 350px;
-    overflow: hidden;
-}
-
-.img-wrapper img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .news-container {
     display: flex;
     flex-direction: row;
@@ -110,11 +94,6 @@
     justify-content: center;
     text-align: left;
     width: 100%;
-}
-
-.text-wrapper span { 
-    font-weight: 700;
-    font-size: 16pt;
 }
 
 .link-text {
@@ -142,13 +121,13 @@
     
     #artikler-hero h1 {
         width: 260px;
-        top: 23%;
+        top: 180px;
     }
     
     #artikler-hero p {
         font-size: 13pt;
         width: 320px;
-        top: 33%;
+        top: 250px;
     }
 }
 
@@ -162,7 +141,7 @@
     #artikler-hero h1 {
         width: 200px;
         border-bottom: 2px solid #eee9e1;
-        top: 28%;
+        top: 230px;
     }
 
     #artikler-hero p {
@@ -206,7 +185,7 @@
     #artikler-hero h1 {
         width: 180px;
         border-bottom: none;
-        top: 23%;
+        top: 190px;
     }
 
     #news-info  {
@@ -222,7 +201,7 @@
     .news-container {
         display: flex;
         flex-direction: column-reverse; /* så det bliver billede - tekst - billede - tekst */
-        max-width: 70%;
+        max-width: 80%;
         margin: 40px 0 0 0; /* fjerner margin til siden og bunden */
         gap: 5%;
     }
@@ -262,7 +241,8 @@
     }
 }
 
-/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
+
 @media screen and (max-width:430px){
     #artikler-hero h1 {
         width: 60%;
