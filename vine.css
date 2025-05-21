@@ -1,0 +1,221 @@
+body {
+    background-color: #eee9e1;
+}
+
+/*-------------------- HERO ---------------------*/
+
+#vine-hero {
+    width: 100%;
+    padding: 5% 0 0 0;
+}
+
+#vine-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#vine-hero h1 {
+    width: 35%;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 68%;
+    color: #57716f;
+    transform: translate(-50%, -50%);
+    padding: 0 0 12px 0;
+    border-bottom: 2px solid #57716f;
+}
+
+/*------------------- VELKOMST ------------------*/
+
+#wine-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#wine-welcome img {
+    width: 100%;
+    height: auto;
+    padding: 5% 30% 0;
+}
+
+#wine-welcome p {
+    padding: 4% 32% 2% 32%;
+}
+
+#wine-welcome span {
+    font-weight: 700; /* for at gøre HAVBLINKs navn mere fed */
+}
+
+/*------------------- VINE ------------------*/
+
+#wine-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 4% 5%;
+    gap: 9%;
+}
+
+.wine-container {
+    width: 18%;
+    padding: 0 0 7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.wine-container img {
+    height: auto;
+}
+
+.wine-container h4 {
+    width: 100%;
+    padding: 2% 0;
+    font-weight: 600;
+    border-bottom: 2px solid #57716f;
+}
+
+.wine-container p {
+    padding: 2% 0 5%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.button2 {
+    width: 100%;
+    display: block;
+}
+
+/*------------------ VINE REPSONSIV ------------------*/
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    #vine-hero h1 {
+        width: 70%;
+        border-bottom: 2px solid #57716f;
+        top: 37%;
+    }
+
+    #wine-welcome img {
+        padding: 5% 28% 0;
+    }
+
+    #wine-welcome p {
+        padding: 4% 26% 2% 26%;
+    }
+
+    .wine-container {
+        width: 23%;
+    }
+    
+    #wine-content-container {
+        gap: 10%;
+        padding: 2% 5%;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    #vine-hero h1 {
+        width: 60%;
+        border-bottom: none;
+        top: 28%;
+    }
+
+    #wine-welcome img {
+        padding: 5% 26% 0;
+    }
+
+    #wine-welcome p {
+        padding: 4% 23% 2% 23%;
+    }
+
+    .wine-container {
+        width: 25%;
+    }
+    
+    #wine-content-container {
+        gap: 10%;
+    }
+
+    .wine-container p {
+        width: 80%;
+    }
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+@media screen and (max-width:530px){
+    #vine-hero h1 {
+        width: 60%;
+        top: 24%; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+    }
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+
+@media screen and (max-width:430px){
+    #vine-hero h1 {
+        width: 60%;
+        top: 20%;
+    }
+
+    #wine-welcome img {
+        padding: 5% 24% 0;
+    }
+
+    #wine-welcome p {
+        padding: 4% 18% 2% 18%;
+    }
+
+    .wine-container {
+        width: 42%;
+    }
+    
+    #wine-content-container {
+        gap: 6%;
+    }
+
+    .wine-container p {
+        width: 77%;
+    }
+}
+
+/*------------------ RESPONSIVE MOBIL M og mindre ------------------*/
+
+@media screen and (max-width:376px){
+    #vine-hero h1 {
+        display:none; /* skjuler overskriften på  M og S mobiler */
+    }
+
+    #wine-welcome img {
+        padding: 5% 24% 0;
+    }
+
+    #wine-welcome p {
+        padding: 4% 16% 2% 16%;
+    }
+
+    .wine-container {
+        width: 47%;
+    }
+    
+    #wine-content-container {
+        gap: 3%;
+    }
+
+    .wine-container p {
+        width: 94%;
+    }
+}

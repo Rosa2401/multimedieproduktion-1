@@ -1,0 +1,818 @@
+/*------- GENERELLE STYLES -------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #eee9e1;
+}
+
+h1, h2, h3, h4 {
+    font-family: "playfair-display", serif;
+    font-style: uppercase;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #eee9e1;
+}
+
+h3, h4 {
+    color: #57716f;
+}
+
+h1 {
+    font-size: 35pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+h3 {
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+p {
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    color: #57716f;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #efd7af;
+}
+
+/*------------------ RESPONSIVE STYLES ------------------*/
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+  
+    h1 {
+        font-size: 28pt;
+    }
+    
+    h2 {
+        font-size: 23pt;
+    }
+    
+    h3 {
+        font-size: 18pt;
+    }
+    
+    h4 {
+        font-size: 14pt;
+    }
+    
+    p {
+        font-size: 12pt;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+
+    h1 {
+        font-size: 20pt;
+    }
+    
+    h2 {
+        font-size: 18pt;
+    }
+    
+    h3 {
+        font-size: 15pt;
+    }
+    
+    h4 {
+        font-size: 13pt;
+    }
+    
+    p {
+        font-size: 11pt;
+    }
+
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+@media screen and (max-width:430px){
+    h1 {
+        font-size: 15pt;
+    }
+    
+    h2 {
+        font-size: 15pt;
+    }
+    
+    h3 {
+        font-size: 15pt;
+    }
+    
+    h4 {
+        font-size: 13pt;
+    }
+    
+    p {
+        font-size: 10pt;
+    }
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+
+.button {
+    display: flex;
+}
+
+.button2 {
+    display: none;
+}
+
+.button, .button2 {
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: #efd7af;
+    color: #57716f;
+    padding: 16px 42px;
+    border: 1pt solid #57716f;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    font-family: "playfair-display", serif;
+    font-size: 16pt;}
+
+.button a, .button2 a {
+    text-decoration: none;
+    color: #57716f;
+}
+
+.button:hover, .button2:hover {
+    background-color: #57716f;
+    color: #efd7af;
+    transition: 0.2s ease-in-out; 
+}
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    .button, .button2 {
+        padding: 13px 35px;
+        font-size: 14pt;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    .button, .button2 {
+        padding: 11px 30px;
+        font-size: 12pt;
+    }
+
+    .button2 {
+        display: flex;
+    }
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+@media screen and (max-width:430px){
+    .button, .button2 {
+        padding: 11px 30px;
+        font-weight: 500pt;
+        font-size: 10pt;
+    }
+}
+
+/*---------------------- LINES ---------------------- */
+
+.line {
+    border-bottom: #57716f 2px solid;
+    padding: 0 10%;
+    width: 80%;
+}
+
+/* ---------------------- HEADER ---------------------- */
+
+#havblink-logo {
+    position: relative;
+    z-index: 999;
+}
+
+header {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: #57716f;
+    z-index: 1000;
+}
+
+header a, header span {
+    text-decoration: none;
+    font-weight: 600;
+    color: #eee9e1;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.havblink img {
+    width: 270px;
+    height: auto;
+}
+
+.havblink img a {
+    height: auto;
+}
+  
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.pc-nav-links {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.pc-nav-links a, .pc-nav-links span {
+    display: block;
+    text-align: right;
+    white-space: nowrap; /* "Butik og forhandlere" blev ved med at wrappe, så nowrap var nødvendigt*/
+}
+
+.pc-nav-links span:hover, .pc-nav-links a:hover {
+    color: #efd7af;
+    transition: 0.2s ease-in-out;
+}
+    
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.pc-menu-point {
+    font-size: 14pt;
+    padding: 10px 5px;
+}
+
+.pc-menu-point.active {
+    border-bottom: 2px solid #efd7af;
+    color: #efd7af
+}
+
+/*---------------- DROPDOWN MENUER ----------------*/
+
+.pc-dropdown {
+    position: relative;
+}
+
+.pc-dropdown:hover > .pc-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* gør at dropdown menuen kommer op når man hoverer over den - AI forslag */
+}
+
+.pc-menu {
+    display: flex; /* gør at dropdown menuen bliver flexbox, så den kan centreres og justeres som ønskes */
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    background-color: #455C5A;
+    right: 0; /* anchor point for mine dropdown menuer skal være det nedste højre hjørne */
+    opacity: 0;
+    gap: 0; /* ingen gap mellem links i dropdown menuen */
+    pointer-events: none;
+    transform: translateY(-10px); /* gør at dropdown menuen kommer op når man hoverer over den - AI forslag */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.pc-menu a {
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    width: 170px;
+    border-bottom: 1px solid #eee9e1;
+    font-family: "playfair-display", serif;
+    font-size: 12pt;
+}
+
+.dropdown-a-bottom a {
+    border-bottom: none; /* fjerner den sidste border-bottom i dropdown menuen */
+}
+
+/*------------------ RESPONSIVE HEADER ------------------*/
+
+@media screen and (max-width:1150px){
+    .pc-menu-point {
+        font-size: 12pt;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+#hamburger {
+    height: 90px;
+    cursor: pointer;
+    display: none;
+    top: 1%;
+    right: 1%;
+    padding: 1% 2%;
+}
+  
+#mobil-menu-toggle, .mobil-submenu-toggle, #nav-mobil {
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    header {
+        padding: 3% 0 0 0; /* for at gøre plads til selfie cam */
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+  
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        z-index: 999;
+    }
+      
+    #hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #eee9e1;
+        border-radius: 2px;
+        transition: transform 0.2s ease-in-out background-color 0.2s ease-in-out;
+        transform-origin: center;
+    }
+
+    #hamburger:hover span {
+        background-color: #efd7af;
+        transition: ease-in-out 0.2s;
+    }
+
+    #hamburger.open span:nth-child(1) { 
+        transform: rotate(45deg) translate(7px, 5px);
+        transition: transform 0.2s ease-in-out;
+    }
+      
+    #hamburger.open span:nth-child(2) {
+        transform: rotate(-45deg) translate(2px, -1px);
+        transition: transform 0.2s ease-in-out;
+    }
+  
+    #mobil-menu-toggle:checked ~ nav#nav-mobil {
+        display: flex;
+    }
+  
+    #nav-mobil {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #57716f95;
+        backdrop-filter: blur(3px);
+        padding: 17% 0 0 0;
+        z-index: 998;
+    }
+  
+    #nav-mobil-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        height: 100%;
+    }
+  
+    .nav-mobil-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        gap: 1%;
+        padding: 0 2%;
+        margin: 2% 0 0 0;
+    }
+  
+    .nav-mobil-links a {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-size: 16pt;
+        font-weight: 600;
+        font-family: "playfair-display", serif;
+        letter-spacing: 1px;
+        color: #eee9e1;
+        border-bottom: 2px solid #eee9e1;
+        text-align: right;
+        padding: 1% 2%;
+        margin: -1%;
+        width: 220px;
+        height: 55px;
+    }
+  
+    .nav-mobil-links a:hover {
+        color: #efd7af;
+        transition: 0.3s ease-in-out;
+    }
+  
+    #header-social-media ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7%;
+        width: 100px;
+        height: 45px;
+        margin: 15% 2% 0 0;
+    }
+  
+    #header-social-media li {
+        margin: 0;
+    }
+  
+    #header-social-media a {
+        width: 45px;
+        height: auto;
+        border: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+  
+    #header-social-media svg {
+        display: block;
+        height: auto;
+        width: 45px;
+        fill: #eee9e1;
+        transition: ease-in-out 0.2s;
+    }
+
+    #header-social-media svg:hover {
+        fill: #efd7af;
+        transition: ease-in-out 0.2s;
+    }
+  
+    .open-this {
+        height: 22px;
+        rotate: 0deg;
+        transition: transform 0.2s ease;
+    }
+  
+    .mobil-toggle-label {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        cursor: pointer;
+    }
+  
+    #mobil-submenu-toggle1:checked ~ .mobil-submenu,
+    #mobil-submenu-toggle2:checked ~ .mobil-submenu,
+    #mobil-submenu-toggle3:checked ~ .mobil-submenu,
+    #mobil-submenu-toggle4:checked ~ .mobil-submenu {
+        display: block;
+    }
+  
+    #mobil-submenu-toggle1:checked + label .open-this,
+    #mobil-submenu-toggle2:checked + label .open-this,
+    #mobil-submenu-toggle3:checked + label .open-this,
+    #mobil-submenu-toggle4:checked + label .open-this {
+        transform: rotate(180deg);
+    }
+  
+    .mobil-submenu-open {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16pt;
+        font-weight: 600;
+        font-family: "playfair-display", serif;
+        letter-spacing: 1px;
+        color: #eee9e1;
+        border-bottom: 2px solid #eee9e1;
+        text-align: right;
+        padding: 1% 2%;
+        margin: -1%;
+        width: 220px;
+        height: 55px;
+    }
+  
+    .mobil-dropdown {
+        position: relative;
+    }
+  
+    .mobil-submenu {
+        display: none;
+        position: absolute;
+        width: 220px;
+        height: 150px;
+        right: 100%;
+        top: 0%;
+        margin: 0;
+        gap: 0;
+        z-index: 999;
+    }
+
+    .mobil-submenu li {
+        height: 40px;
+    }
+  
+    .mobil-submenu a {
+        display: flex;
+        justify-content: right;
+        font-size: 13pt;
+        font-weight: 600;
+        border-bottom: none;
+    }
+
+    .mobil-submenu-open:hover {
+        color: #efd7af;
+        transition: 0.3s ease-in-out;
+    }
+
+    .mobil-submenu-open.active {
+        color: #efd7af;
+        transition: 0.3s ease-in-out;
+        font-weight: 700;
+    }
+    
+    .mobil-submenu a.active {
+        color: #efd7af;
+        transition: 0.3s ease-in-out;
+        font-weight: 700;
+    }
+}
+
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+  
+  @media only screen and (max-width: 768px) {
+    header {
+        padding: 5% 0 0 0; /* for at gøre plads til selfie cam */
+    }
+    
+    #nav-mobil {
+        padding: 25% 0 0 0;
+    }
+
+    .nav-mobil-links a {
+        font-size: 14pt;
+        width: 200px;
+    }
+
+    .mobil-submenu-open {
+        font-size: 14pt;
+        width: 200px;
+    }
+
+    .mobil-submenu {
+        width: 220px;
+    }
+
+    .mobil-submenu a {
+        font-size: 11pt;
+    }
+  }
+
+/* ------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+
+  @media screen and (max-width: 430px) {
+    header {
+        padding: 7% 0 0 0; /* for at gøre plads til selfie cam */
+    }
+    
+    #havblink-logo {
+        height: 25px;
+        width: auto;
+    }
+    
+    #nav-mobil {
+        padding: 40% 0 0 0;
+    }
+
+    .nav-mobil-links a {
+        font-size: 12pt;
+        font-weight: 500px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .mobil-submenu-open {
+        font-size: 12pt;
+        font-weight: 500px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .open-this {
+        height: 15px;
+    }
+
+    .mobil-submenu {
+        width: 150px;
+        height: 45px;
+    }
+
+    .mobil-submenu a {
+        font-size: 10pt;
+    }
+    #header-social-media ul {
+        width: 80px;
+        height: 35px;
+    }
+  
+    #header-social-media li {
+        margin: 0;
+    }
+  
+    #header-social-media a {
+        width: 35px;
+        height: auto;
+    }
+  
+    #header-social-media svg {
+        width: 35px;
+        height: auto;
+    }
+    
+  }
+
+/*---------------- FOOTER ----------------*/
+
+#footer-wave { /* fungerer som en wrapper for bølgen */
+    display: block; /* for at få bølgen til at fylde hele bredden af skærmen */
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px; /* for at få bølgen til at gå under footer uden et hvidt mellemrum*/
+}
+
+#footer-wave svg {
+    width: 100%;
+    height: auto;
+    fill: #a9d2cf; /* farven på bølgen */
+}
+
+footer {
+    background-color: #a9d2cf;
+    display: flex;
+    flex-direction: row; /* for at få footer til at være i en række i stedet for kolonne*/
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 30px 0; /* giver lidt mere space i bunden af footer */
+}
+
+footer a {
+    text-decoration: none;
+    color: #57716f;
+    transition: 0.2s ease-in-out; /* hover effekt på alle links i footer */
+}
+
+footer a:hover {
+    color: #efd7af;
+    transition: ease-in-out 0.2s; /* hover effekt på alle links i footer */
+}
+  
+#footer-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    gap: 11%;
+}
+
+#footer-container1 {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#map {
+    border: solid #ffffff 5px; /* hvid kant rundt om kortet */
+    height: 270px;
+    width: 270px;
+}
+
+#footer-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+    margin-top: -27px;
+}
+
+#footer-container1 svg { /* ikonerne i footer */
+    height: 65px;
+    width: auto;
+    fill: #57716f; /* farven på ikonerne, fill bruges til svg */
+    transition: 0.2s ease-in-out; /* hover effekt på ikonerne, som passer med alle andre links */
+}
+
+#footer-container1 svg:hover {
+    fill: #efd7af;
+    transition: ease-in-out 0.2s; /* hover effekt på ikonerne, som passer med alle andre links */
+}
+
+.footer-container2 {
+    line-height: 2;
+}
+
+#åbningstider {
+    line-height: 1.55;
+}
+
+/*---------------- RESPONSIVE FOOTER ------------------*/
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    #footer-container {
+        width: 70%;
+        gap: 5%;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    #footer-container {
+        flex-direction: column; /* footer-container skal være i kolonne i stedet for række */
+        justify-content: center; /* alt content i footer skal være centreret */
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 5% 0 0 0;
+    }
+
+    #footer-social-media { /* SoMe-ikonerne i footeren skal være centreret i responsiv, som resten af contentet */
+        justify-content: center;
+        padding: 0 0 7% 0;
+    }
+    
+    .hidebr {
+        display: none; /* footerbr skjules på skærme mindre end 768px, så der ikke er så stort mellemrum */
+    }
+
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+@media screen and (max-width:430px){
+    
+    #footer-container {
+        padding: 7% 0 0 0;
+    }
+
+    #map {
+        width: 70%;
+        height: auto;
+    }
+}

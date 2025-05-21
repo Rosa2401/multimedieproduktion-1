@@ -1,0 +1,287 @@
+/*-------------------- HERO ---------------------*/
+
+#artikler-hero {
+    width: 100%;
+}
+
+#artikler-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#artikler-hero h1 {
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border-bottom: 2px solid #eee9e1;
+    color: #eee9e1;
+}
+
+#artikler-hero p {
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    color: #eee9e1;
+}
+
+#artikler-hero span, #news-info span { 
+    font-weight: 700; /* for at gøre HAVBLINKs navn mere fed */
+}
+
+/*------------------- BØLGE ------------------*/
+
+#background-wave {
+    margin: -10% 0 -5px 0; /* for at få bølgen til at gå under footer uden et hvidt mellemrum*/
+    display: block; /* for at få bølgen til at fylde hele bredden af skærmen */
+    width: 100%;
+    height: auto;
+}
+
+#background-wave svg {
+    fill: #c7e4dc; /* farven på bølgen */
+}
+
+/*------------------- CONTENT ------------------*/
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 4% 0;
+}
+
+#news-content-upper {
+    background-color: #c7e4dc;
+}
+
+#news-content-lower {
+    background-color: #eee9e1;
+}
+
+.img-wrapper { /* en img-wrapper for at kunne justere billedet lettere, når jeg når til responsivt design */
+    display: flex;
+    flex-shrink: 0;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 60px;
+    gap: 5%;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.text-wrapper span { 
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.link-text {
+    text-decoration: none;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #57716f;
+}
+
+.link-text:hover {
+    color: #efd7af;
+}
+
+#news-info, #news-info-line {
+    display: none; /* jeg flytter i 1024px responsiv hero <p> ned under hero-billedet, indtil da er den gemt */
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:1150px){
+    #artikler-hero {
+        padding-top: 20px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #artikler-hero h1 {
+        width: 260px;
+        top: 23%;
+    }
+    
+    #artikler-hero p {
+        font-size: 13pt;
+        width: 320px;
+        top: 33%;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD PRO ------------------*/
+
+@media screen and (max-width:1024px){
+    #artikler-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #artikler-hero h1 {
+        width: 200px;
+        border-bottom: 2px solid #eee9e1;
+        top: 28%;
+    }
+
+    #artikler-hero p {
+        display: none; /* skjuler teksten på hero-billedet */
+    }
+
+    #news-info  {
+        display: block; /* viser teksten under hero-billedet */
+        font-size: 14pt; /* teksten skal gerne se anderledes ud end <p> ved artiklerne */
+        font-weight: 600;
+        width: 450px;
+        margin: 35px 0 45px 0; /* margin til toppen og bunden */
+    }
+
+    #news-info-line {
+        display: block;
+    }
+
+    .img-wrapper { /*billedet skal helst være mindre på mindre skærme */
+        width: 310px;
+        height: 250px;
+    }
+
+    .text-wrapper span { 
+        font-weight: 700;
+        font-size: 14pt;
+    }
+
+    .link-text {
+        font-size: 12pt;
+    }
+}
+
+/*------------------ RESPONSIVE IPAD MINI ------------------*/
+
+@media screen and (max-width:768px){
+    #artikler-hero {
+        padding-top: 50px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #artikler-hero h1 {
+        width: 180px;
+        border-bottom: none;
+        top: 23%;
+    }
+
+    #news-info  {
+        font-size: 12pt; /* teksten skal gerne se anderledes ud end <p> ved artiklerne */
+        max-width: 70%;
+        margin: 35px 0 40px 0; /* margin til toppen og bunden */
+    }
+
+    .news-content {
+        padding: 0;
+    }
+    
+    .news-container {
+        display: flex;
+        flex-direction: column-reverse; /* så det bliver billede - tekst - billede - tekst */
+        max-width: 70%;
+        margin: 40px 0 0 0; /* fjerner margin til siden og bunden */
+        gap: 5%;
+    }
+
+    .news-container2 {
+        flex-direction: column; /* så det bliver billede - tekst - billede - tekst */
+    }
+
+    .img-wrapper {
+        max-width: 100%;
+        height: 250px;
+        padding: 0 0 6% 0;
+    }
+
+    .text-wrapper span { 
+        font-weight: 700;
+        font-size: 12pt;
+    }
+
+    .button2 {
+        margin: 40px;
+    }
+
+    .link-text {
+        display: none; /* skjuler linket på mindre skærme og indsætter en knap i stedet */
+    }
+
+}
+
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:530px){
+    #artikler-hero h1 {
+        width: 60%;
+        border-bottom: none;
+        top: 20%; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+    }
+}
+
+/*------------------ RESPONSIVE IPHONE 14 PRO MAX ------------------*/
+@media screen and (max-width:430px){
+    #artikler-hero h1 {
+        width: 60%;
+        border-bottom: none;
+        top: 18%;
+    }
+
+    #welcome-container {
+        padding: 0 0 8% 0;
+    }
+
+    .img-wrapper {
+        width: 250px;
+        height: 200px;
+        padding: 0 0 6% 0;
+    }
+
+    .text-wrapper span { 
+        font-weight: 600;
+        font-size: 11pt;
+    }
+}

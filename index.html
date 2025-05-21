@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velkommen til HAVBLINK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index-styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/eyy5klc.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="havblink">
+                <a href="index.html">
+                    <img src="assets/logo-duo.svg" id="havblink-logo" alt="HAVBLINK logo" class="logo_header">
+                </a>
+            </div>
+
+            <div id="nav-bar">
+                <div id="nav-desktop">
+                    <nav>
+                        <ul class="pc-nav-links">
+                            <li class="pc-dropdown">
+                                <span class="pc-menu-point">VINGÅRDEN</span>
+                                <ul class="pc-menu">
+                                    <li><a href="besøgvingaarden.html">BESØG VINGÅRDEN</a></li>
+                                    <li><a href="#">BEGIVENHEDER</a></li>
+                                    <li><a href="#">MARK & VINERI</a></li>
+                                    <li class="dropdown-a-bottom"><a href="#">ÅBNINGSTIDER</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="pc-menu-point" href="#">BUTIK OG FORHANDLERE</a>
+                            </li>
+
+                            <li class="pc-dropdown">
+                                <span class="pc-menu-point">VORES VIN</span>
+                                <ul class="pc-menu">
+                                    <li><a href="hvidvine.html">HVIDVIN</a></li>
+                                    <li><a href="#">ROSÉ</a></li>
+                                    <li class="dropdown-a-bottom"><a href="#">RØDVIN</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="pc-dropdown">
+                                <span class="pc-menu-point">PRESSE</span>
+                                <ul class="pc-menu">
+                                    <li><a href="artikler.html">ARTIKLER</a></li>
+                                    <li><a href="#">ANMELDELSER</a></li>
+                                    <li class="dropdown-a-bottom"><a href="#">PRÆMIERINGER</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="pc-dropdown">
+                                <span class="pc-menu-point">OM OS</span>
+                                <ul class="pc-menu">
+                                    <li><a href="#">VORES HISTORIE</a></li>
+                                    <li><a href="bæredygtighed.html">BÆREDYGTIGHED</a></li>
+                                    <li><a href="#">GALLERI</a></li>
+                                    <li><a href="#">VIDEO</a></li>
+                                    <li class="dropdown-a-bottom"><a href="#">KONTAKT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+<!-- RESPONSIVE HEADER -->
+
+                <div class="nav-mobil-container">
+                    <input type="checkbox" id="mobil-menu-toggle">
+                    <label for="mobil-menu-toggle" id="hamburger"> 
+                            <span></span>
+                            <span></span>
+                    </label>
+
+                    <nav id="nav-mobil">
+                        <div id="nav-mobil-content">
+                            <ul class="nav-mobil-links">
+
+                                <li class="mobil-dropdown">
+                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle1">
+                                    <label class="mobil-toggle-label" for="mobil-submenu-toggle1">
+                                    <span class="mobil-submenu-open">
+                                        <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
+                                        VINGÅRDEN
+                                    </span>
+                                    </label>
+                                    <ul class="mobil-submenu" id="mobil-submenu1">
+                                        <li><a href="besoegvingaarden.html">BESØG VINGÅRDEN</a></li>
+                                        <li><a href="#">BEGIVENHEDER</a></li>
+                                        <li><a href="#">MARK & VINERI</a></li>
+                                        <li><a href="#">ÅBNINGSTIDER</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">BUTIK</a>
+                                </li>
+
+                                <li class="mobil-dropdown">
+                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle2">
+                                    <label class="mobil-toggle-label" for="mobil-submenu-toggle2">
+                                        <span class="mobil-submenu-open">
+                                            <img src="assets/open-this.svg" class="open-this" alt="open this icon">
+                                            VORES VIN
+                                        </span>
+                                    </label>
+                                    <ul class="mobil-submenu" id="mobil-submenu2">
+                                        <li><a href="hvidvine.html">HVIDVINE</a></li>
+                                        <li><a href="#">ROSÉ</a></li>
+                                        <li><a href="#">RØDVIN</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mobil-dropdown">
+                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle3">
+                                    <label class="mobil-toggle-label" for="mobil-submenu-toggle3">
+                                        <span class="mobil-submenu-open">
+                                            <img src="assets/open-this.svg" class="open-this" alt="open this icon">
+                                            PRESSE
+                                        </span>
+                                    </label>
+                                    <ul class="mobil-submenu" id="mobil-submenu3">
+                                        <li><a href="artikler.html">ARTIKLER</a></li>
+                                        <li><a href="#">ANMELDELSER</a></li>
+                                        <li><a href="#">PRÆMIERINGER</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="mobil-dropdown">
+                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle4">
+                                    <label class="mobil-toggle-label" for="mobil-submenu-toggle4">
+                                        <span class="mobil-submenu-open">
+                                            <img src="assets/open-this.svg" class="open-this" alt="open this icon">
+                                            OM OS
+                                        </span>
+                                    </label>
+                                    <ul class="mobil-submenu" id="mobil-submenu4">
+                                        <li><a href="artikler.html">VORES HISTORIE</a></li>
+                                        <li><a href="#">BÆREDYGTIGHED</a></li>
+                                        <li><a href="#">GALLERI</a></li>
+                                        <li><a href="#">VIDEO</a></li>
+                                        <li><a href="#">KONTAKT</a></li>
+                                    </ul>
+                                </li>
+
+                                <li id="header-social-media"> <!-- nederst i menuer er deres SoMe-ikoner til Instagram og Facebook - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <svg id="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                                                    <path d="M400,229.6c-94.1,0-170.4,76.3-170.4,170.4s76.3,170.4,170.4,170.4,170.4-76.3,170.4-170.4h0c-.1-94-76.3-170.3-170.4-170.4h0ZM400,481.5c-45,0-81.5-36.5-81.5-81.5s36.5-81.5,81.5-81.5,81.5,36.5,81.5,81.5-36.5,81.4-81.5,81.5ZM577.8,0H222.2C99.5.1.1,99.5,0,222.2v355.6c.1,122.7,99.5,222.1,222.2,222.2h355.6c122.7-.1,222.1-99.5,222.2-222.2V222.2C799.9,99.5,700.5.1,577.8,0ZM711.1,577.8c0,73.6-59.7,133.3-133.3,133.3H222.2c-73.6,0-133.3-59.7-133.3-133.3V222.2c0-73.6,59.7-133.3,133.3-133.3h355.6c73.6,0,133.3,59.7,133.3,133.3v355.6ZM651.9,207.4c0,32.7-26.5,59.3-59.3,59.3s-59.3-26.5-59.3-59.3,26.5-59.3,59.3-59.3,59.2,26.5,59.3,59.3h0Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg id="facebook-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 507.14">
+                                                    <path d="M509,254.5C509,113.94,395.06,0,254.5,0S0,113.94,0,254.5c0,119.36,82.17,219.5,193.02,247.01v-169.24h-52.48v-77.77h52.48v-33.51c0-86.63,39.2-126.78,124.24-126.78,16.13,0,43.95,3.17,55.33,6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73,0-57.86,15.81-57.86,56.91v27.5h83.13l-14.28,77.77h-68.85v174.87c126.02-15.22,223.67-122.52,223.67-252.64Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="landing-hero">
+            <img src="images/hvidvinsglas2.jpg" alt="hvidvin og vinglas med havet i baggrunden">
+            <h1>NATURLIGT FRISK - FREMSTILLET I DANMARK</h1>
+        </div>
+
+        <div id="welcome-container">
+            <div id="background-wave">
+                <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
+                    <path class="cls-1" d="M1510.54,53c-10.31-8-27.83-15.89-40.31-19.99-23.65-7.7-48.31-11.78-73.01-14.36-396.67-47.61-345.05,237.22-816.59,57.8C421.36,15.92,245.71-43.04,85.72,43.92,54.88,59.84,25.76,79.68,0,103.09v67.87h1512V54.11c-.45-.38-.99-.75-1.46-1.11Z"/>
+                </svg>
+            </div>
+
+            <div id="index-welcome">
+                <img src="assets/logo-seagreen.svg" alt="søgrønt havblink logo">
+                <p>
+                    Vin med udsigt. Ro med dybde. Smag med sjæl.
+                </p>
+                <br>
+                <p>
+                    Hos <span>HAVBLINK</span> skaber vi mere end vin - vi skaber oplevelser, der smager af sol, hav og nærvær.
+                </p>
+                <p> 
+                    Vores vingård ligger, hvor horisonten møder kysten, og naturen sætter tempoet. 
+                </p>
+                <p>
+                    Her dyrker vi hvidvine med karakter, friskhed og finesse - altid med respekt for klima, jord og det langsomme håndværk.
+                </p>
+                <p>    
+                    Udforsk vores udvalg af Solaris-baserede hvidvine - fra sprøde citrusnoter til solmoden tropisk fylde - og find din nye favorit. Eller oplev vinene dér, hvor de er skabt. 
+                </p>
+                <br>
+                <p>    
+                    Uanset om du besøger os for stilheden, smagen eller selskabet - 
+                    så er du hjerteligt velkommen.
+                </p>
+                <p> 
+                    <span>HAVBLINK</span> er vin med udsigt, og vi glæder os til at dele den med dig.
+                </p>
+            </div>
+
+            <a class="button" href="#">
+                <span>
+                    BESØG OS
+                </span>
+            </a>
+        </div>
+
+        <div id="landing-content">
+
+            <div class="info-container">
+
+                <div class="img-wrapper">
+                    <img src="images/druer6.jpg" alt="druer i solen">
+                </div>
+
+                <div class="text-wrapper">
+                    <p>
+                        <span>Hos HAVBLINK tror vi på, at god vin</span> starter med god jord - og respekt for den. 
+                        Derfor arbejder vi med naturen, ikke imod den.
+                    </p>
+                    <br>
+                    <p>
+                        Vi bruger solenergi, lokale materialer og skånsomme metoder i mark og produktion for at minimere vores aftryk.
+                    </p>
+                    <p>
+                        Vores mål er at skabe vin, der ikke kun smager godt, men også gør godt - for mennesker, miljø og fremtidige generationer.
+                    </p>
+                    <br>
+                    <p>
+                        Vil du vide mere om vores grønne tiltag og hvordan vi tænker bæredygtighed hele vejen fra drue til glas?
+                    </p>
+                    <br>
+
+                    <a class="link-text" href="#">
+                        Læs mere om vores tilgang til bæredygtighed.
+                    </a>
+                </div>
+
+                
+                <a class="button2" href="#">
+                    <span>
+                        LÆS MERE
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="line"> 
+            </div>
+
+            <div id="info-container2" class="info-container">
+
+                <a class="button2" href="#"> <!-- Tilføjet usynlig knap ved min-width 1024px øverst, pga brug af flex-direction:column-reverse ved 768px breakpoint -->
+                    <span>
+                        LÆS MERE
+                    </span>
+                </a>
+                
+
+                <div class="text-wrapper">
+                    <p>
+                        <span>Hos HAVBLINK tror vi på, at vin</span> skal opleves med alle sanser - ikke kun smages, men mærkes, 
+                        dufte og deles. Derfor åbner vi vores døre og marker for dig, der vil tættere på vinens verden.
+                    </p>
+                    <br>
+                    <p>
+                        Her kan du gå blandt vinstokkene, mærke havbrisen, og opleve hvordan natur, ro og håndværk smelter sammen.                        
+                    </p>
+                    <br>
+                    <p>
+                        Vi inviterer til vinsmagninger, guidede ture, vinmarksyoga og sæsonbaserede events – alt sammen med udsigt til hav og horisont.
+                    </p>
+                    <br>
+                    <p>
+                        Hvad enten du søger viden, afslapning eller fællesskab, har vi en oplevelse, der passer til dig.
+                    </p>
+                    <br>
+
+                    <a class="link-text" href="#">
+                        Læs mere om oplevelser hos HAVBLINK.
+                    </a> 
+                </div>
+                
+                <div class="img-wrapper">
+                    <img src="images/vinmark5.jpg" alt="vinmark og hus">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+                <!-- Tilføjet footer wave til <main>, for at undgå position:absolute i footer -->
+
+        <div id="footer-wave">
+            <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
+                <path class="cls-1" d="M1510.54,53c-10.31-8-27.83-15.89-40.31-19.99-23.65-7.7-48.31-11.78-73.01-14.36-396.67-47.61-345.05,237.22-816.59,57.8C421.36,15.92,245.71-43.04,85.72,43.92,54.88,59.84,25.76,79.68,0,103.09v67.87h1512V54.11c-.45-.38-.99-.75-1.46-1.11Z"/>
+            </svg>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-container1">
+                <div>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div>
+                    <p>Hellegårdsvej 267</p>
+                    <p>5700 Svendborg</p>
+                    <p>Danmark</p>
+                    <br>
+                </div>
+
+                <div id="footer-social-media">
+                    <a href="#">
+                        <svg id="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                            <path d="M400,229.6c-94.1,0-170.4,76.3-170.4,170.4s76.3,170.4,170.4,170.4,170.4-76.3,170.4-170.4h0c-.1-94-76.3-170.3-170.4-170.4h0ZM400,481.5c-45,0-81.5-36.5-81.5-81.5s36.5-81.5,81.5-81.5,81.5,36.5,81.5,81.5-36.5,81.4-81.5,81.5ZM577.8,0H222.2C99.5.1.1,99.5,0,222.2v355.6c.1,122.7,99.5,222.1,222.2,222.2h355.6c122.7-.1,222.1-99.5,222.2-222.2V222.2C799.9,99.5,700.5.1,577.8,0ZM711.1,577.8c0,73.6-59.7,133.3-133.3,133.3H222.2c-73.6,0-133.3-59.7-133.3-133.3V222.2c0-73.6,59.7-133.3,133.3-133.3h355.6c73.6,0,133.3,59.7,133.3,133.3v355.6ZM651.9,207.4c0,32.7-26.5,59.3-59.3,59.3s-59.3-26.5-59.3-59.3,26.5-59.3,59.3-59.3,59.2,26.5,59.3,59.3h0Z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                         <svg id="facebook-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 507.14">
+                            <path d="M509,254.5C509,113.94,395.06,0,254.5,0S0,113.94,0,254.5c0,119.36,82.17,219.5,193.02,247.01v-169.24h-52.48v-77.77h52.48v-33.51c0-86.63,39.2-126.78,124.24-126.78,16.13,0,43.95,3.17,55.33,6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73,0-57.86,15.81-57.86,56.91v27.5h83.13l-14.28,77.77h-68.85v174.87c126.02-15.22,223.67-122.52,223.67-252.64Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-container2">
+                <h4>ÅBNINGSTIDER</h4>
+                <br>
+                <div id="åbningstider"><p>Mandag.......................Lukket</p>
+                    <p>Tirsdag.........................Lukket</p>
+                    <p>Onsdag..........................10-15</p>
+                    <p>Torsdag..........................10-15</p>
+                    <p>Fredag............................10-13</p>
+                    <p>Lørdag........................10-15</p>
+                    <p>Søndag.......................Lukket</p>
+                </div>
+                <br>
+                <h4>BESØG OS</h4>
+                <br>
+                <p><a href="besøgvingaarden.html">Arrangementer</a></p>
+                <p><a href="#">BOOK NU</a></p>
+            </div>
+
+            <div class="footer-container2">
+                <h4>KUNDESERVICE</h4>
+                <br>
+                <p><a href="#">Om HAVBLINK</a></p>
+                <p><a href="#">Butik</a></p>
+                <p><a href="#">Forhandlere</a></p>
+                <p><a href="#">Betingelser & Vilkår</a></p>
+                <p><a href="#">Privatlivspolitik</a></p>
+                <p><a href="#">Cookies</a></p>
+                <br>
+                <br class="hidebr">
+                <br class="hidebr">
+                <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
+                <p>Telefon: 44 88 15 65</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- INDSÆT FOOTER -->
+
+</body>
