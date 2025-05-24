@@ -110,34 +110,6 @@
     gap: 5%;
 }
 
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-}
-
-.text-wrapper span {
-    font-weight: 700;
-}
-
-.start-text { 
-    font-size: 16pt;
-}
-
-.link-text {
-    text-decoration: none;
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 700;
-    font-size: 14pt;
-    color: #57716f;
-}
-
-.link-text:hover {
-    color: #efd7af;
-}
-
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:1150px){
@@ -180,10 +152,6 @@
     .img-wrapper { /*billedet skal helst være mindre på mindre skærme */
         width: 310px;
         height: 250px;
-    }
-
-    .start-text { 
-        font-size: 14pt;
     }
 
     .link-text {
@@ -277,7 +245,7 @@
         height: 200px;
     }
 
-    .text-wrapper span, .start-text { 
+    .text-wrapper span { 
         font-size: 11pt;
     }
 }

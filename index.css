@@ -91,31 +91,6 @@
     margin-bottom: -10px;
 }
 
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-}
-
-.text-wrapper span { 
-    font-weight: 700;
-    font-size: 16pt;
-}
-
-.link-text {
-    text-decoration: none;
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 700;
-    font-size: 14pt;
-    color: #57716f;
-}
-
-.link-text:hover {
-    color: #efd7af;
-}
-
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:1150px){
@@ -152,10 +127,6 @@
         height: 250px;
     }
 
-    .text-wrapper span { 
-        font-size: 14pt;
-    }
-
     .link-text {
         font-size: 12pt;
     }
@@ -185,10 +156,6 @@
     .img-wrapper {
         width: 320px;
         padding: 0 0 6% 0;
-    }
-
-    .text-wrapper span { 
-        font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
     }
 
     .info-container {
@@ -227,10 +194,5 @@
     .img-wrapper {
         width: 250px;
         height: 200px;
-    }
-
-    .text-wrapper span { 
-        font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
-        font-size: 11pt;
     }
 }

@@ -88,29 +88,48 @@
     gap: 5%;
 }
 
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-}
-
-.link-text {
-    text-decoration: none;
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 700;
-    font-size: 14pt;
-    color: #57716f;
-}
-
-.link-text:hover {
-    color: #efd7af;
-}
-
 #news-info, #news-info-line {
     display: none; /* jeg flytter i 1024px responsiv hero <p> ned under hero-billedet, indtil da er den gemt */
 }
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#back-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    margin: -50px 0 30px 0;
+    width: 100%;
+    gap: 85%;
+}
+
+#next {
+    fill: #57716f;
+    transition: ease-in-out 0.2s;
+}
+
+#next:hover {
+    fill: #efd7af;
+    transition: ease-in-out 0.2;
+}
+
+#back { /* der er ingen tidligere nyhedsartikler, så denne pil er "greyed out" */
+    transform: rotate(180deg);
+    fill: #57716f85;
+}
+
+.button3 {
+    display: flex;
+    margin: 0 auto 50px auto; /* knappen skal placeres midt på siden, og der skal være lidt luft under den før footeren */
+}
+
 
 /*------------------ EKSTRA H1 ------------------*/
 
@@ -166,7 +185,6 @@
     }
 
     .text-wrapper span { 
-        font-weight: 700;
         font-size: 14pt;
     }
 
@@ -217,27 +235,39 @@
     }
 
     .text-wrapper span { 
-        font-weight: 700;
         font-size: 12pt;
     }
 
     .button2 {
         margin: 40px;
     }
-
-    .link-text {
-        display: none; /* skjuler linket på mindre skærme og indsætter en knap i stedet */
+    
+    .button3 {
+        display: none;
     }
 
+    .button4 {
+        display: flex;
+    }
+
+    #back-next {
+        margin: 20px 0 30px 0;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    #back-next svg {
+        min-width: 40px;
+        max-width: 40px;
+        height: auto;
+    }
 }
 
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:530px){
     #artikler-hero h1 {
-        width: 60%;
-        border-bottom: none;
-        top: 20%; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 155px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 }
 
@@ -245,9 +275,7 @@
 
 @media screen and (max-width:430px){
     #artikler-hero h1 {
-        width: 60%;
-        border-bottom: none;
-        top: 18%;
+        top: 140px;
     }
 
     #welcome-container {

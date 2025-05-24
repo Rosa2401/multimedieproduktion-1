@@ -112,7 +112,6 @@ a:hover {
     p {
         font-size: 11pt;
     }
-
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
@@ -157,15 +156,20 @@ a:hover {
 
 /* ---------------------- BUTTONS ---------------------- */
 
-.button {
+.button, 
+.button3 {
     display: flex;
 }
 
-.button2 {
+.button2,
+.button4 {
     display: none;
 }
 
-.button, .button2 {
+.button, 
+.button2, 
+.button3, 
+.button4 {
     align-items: center; 
     justify-content: center;
     text-align: center;
@@ -178,12 +182,18 @@ a:hover {
     font-family: "playfair-display", serif;
     font-size: 16pt;}
 
-.button a, .button2 a {
+.button a, 
+.button2 a, 
+.button3 a, 
+.button4 a {
     text-decoration: none;
     color: #57716f;
 }
 
-.button:hover, .button2:hover {
+.button:hover, 
+.button2:hover,
+.button3:hover,
+.button4:hover {
     background-color: #57716f;
     color: #efd7af;
     transition: 0.2s ease-in-out; 
@@ -191,16 +201,22 @@ a:hover {
 
 /*---------------------- LINES ---------------------- */
 
-.line {
+.line, .line2 {
     border-bottom: #57716f 2px solid;
     padding: 0 10%;
     width: 80%;
 }
 
+.line2 {
+    display: none;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
 
 @media screen and (max-width:1024px){
-    .button, .button2 {
+    .button, .button2, .button3 {
         padding: 13px 35px;
         font-size: 14pt;
     }
@@ -209,7 +225,10 @@ a:hover {
 /*------------------ RESPONSIVE IPAD MINI ------------------*/
 
 @media screen and (max-width:768px){
-    .button, .button2 {
+    .button, 
+    .button2, 
+    .button3,
+    .button4 {
         padding: 11px 30px;
         font-size: 12pt;
     }
@@ -217,15 +236,72 @@ a:hover {
     .button2 {
         display: flex;
     }
+
+    .line2 {
+        display: flex;
+    }
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    .button, .button2 {
+    .button, 
+    .button2, 
+    .button3 
+    .button4 {
         padding: 11px 30px;
         font-weight: 500pt;
         font-size: 10pt;
+    }
+}
+
+/* ---------------------- DIVERSE TEXT ---------------------- */
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.start-text { 
+    font-size: 16pt;
+}
+
+.link-text {
+    text-decoration: none;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #57716f;
+}
+
+.link-text:hover {
+    color: #efd7af;
+}
+
+/* --------------------- RESPONSIV --------------------- */
+
+@media screen and (max-width:1024px){
+    .start-text { 
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width:768px){
+    .link-text {
+        display: none; /* skjuler linket på mindre skærme og indsætter en knap i stedet */
+    }
+
+    .start-text { 
+    font-weight: 600; /* tyk skrift på mindre skærme kan være lidt sværere at læse, derfor gøres den mindre tyk */
+    }
+}
+
+@media screen and (max-width:430px){
+    .start-text { 
+        font-size: 11pt;
     }
 }
 
@@ -311,6 +387,10 @@ nav ul {
 .pc-menu-point.active {
     border-bottom: 2px solid #efd7af;
     color: #efd7af
+}
+
+.pc-dropdown a.active {
+    color: #efd7af;
 }
 
 /*---------------- DROPDOWN MENUER ----------------*/
@@ -823,7 +903,6 @@ footer a:hover {
     .hidebr {
         display: none; /* footerbr skjules på skærme mindre end 768px, så der ikke er så stort mellemrum */
     }
-
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/

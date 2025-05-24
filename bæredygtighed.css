@@ -62,7 +62,6 @@
     width: 100%;
 }
 
-
 .info-container {
     display: flex;
     flex-direction: row;
@@ -75,18 +74,6 @@
 
 #info-container2 {
     margin: -7px 0 80px 0;
-}
-
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-}
-
-.text-wrapper span { 
-    font-weight: 700;
 }
 
 /*------------------ EKSTRA H1 ------------------*/
@@ -132,7 +119,6 @@
     }
 
     .text-wrapper span { 
-        font-weight: 700;
         font-size: 14pt;
     }
 }
@@ -182,7 +168,6 @@
     }
 
     .text-wrapper span { 
-        font-weight: 700;
         font-size: 12pt;
     }
 }
