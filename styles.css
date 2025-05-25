@@ -462,10 +462,6 @@ nav ul {
 }
 
 @media screen and (max-width:1024px){
-    header {
-        padding: 3% 0 0 0; /* for at gøre plads til selfie cam */
-    }
-
     #nav-desktop {
         display: none;
     }
@@ -724,11 +720,7 @@ nav ul {
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
-  @media screen and (max-width: 430px) {
-    header {
-        padding: 7% 0 0 0; /* for at gøre plads til selfie cam */
-    }
-    
+  @media screen and (max-width: 430px) {    
     #havblink-logo {
         height: 25px;
         width: auto;

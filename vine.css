@@ -16,10 +16,10 @@ body {
 }
 
 #vine-hero h1 {
-    width: 35%;
+    width: 420px;
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 290px;
     left: 68%;
     color: #57716f;
     transform: translate(-50%, -50%);
@@ -98,13 +98,29 @@ body {
 
 /*------------------ VINE REPSONSIVE ------------------*/
 
+/*------------------ EKSTRA H1 ------------------*/
+
+@media screen and (max-width:1150px){
+    #vine-hero {
+        padding-top: 60px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
+    #vine-hero h1 {
+        top: 230px;
+    }
+}
+
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
 
 @media screen and (max-width:1024px){
+        #vine-hero {
+        padding-top: 70px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
     #vine-hero h1 {
-        width: 70%;
+        width: 350px;
         border-bottom: 2px solid #57716f;
-        top: 37%;
+        top: 210px;
     }
 
     #wine-welcome img {
@@ -128,10 +144,14 @@ body {
 /*------------------ RESPONSIVE IPAD MINI ------------------*/
 
 @media screen and (max-width:768px){
+        #vine-hero {
+        padding-top: 60px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+
     #vine-hero h1 {
-        width: 60%;
+        width: 250px;
         border-bottom: none;
-        top: 28%;
+        top: 190px;
     }
 
     #wine-welcome img {
@@ -158,9 +178,12 @@ body {
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:530px){
+        #vine-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+    
     #vine-hero h1 {
-        width: 60%;
-        top: 24%; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 130px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 }
 
@@ -168,8 +191,8 @@ body {
 
 @media screen and (max-width:430px){
     #vine-hero h1 {
-        width: 60%;
-        top: 20%;
+        width: 200px;
+        top: 120px;
     }
 
     #wine-welcome img {
