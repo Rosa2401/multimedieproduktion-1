@@ -84,13 +84,13 @@
     }
     
     #info-hero h1 {
-        top: 230px;
+        top: 210px;
         width: 430px;
     }
     
     #info-hero h4 {
         font-size: 19pt;
-        top: 280px;
+        top: 260px;
         width: 370px;
     }
 }
@@ -103,13 +103,13 @@
     }
     
     #info-hero h1 {
-        top: 210px;
+        top: 200px;
         width: 340px;
     }
 
     #info-hero h4 {
         font-size: 16pt;
-        top: 250px;
+        top: 240px;
         width: 330px;
     }
 
@@ -127,18 +127,16 @@
 
 @media screen and (max-width:768px){
     #info-hero {
-        padding-top: 70px; /* for at få hero-billedet til at være lidt længere nede */
+        padding-top: 60px; /* for at få hero-billedet til at være lidt længere nede */
     }
     
     #info-hero h1 {
-        top: 190px;
+        top: 170px;
         width: 235px;
     }
 
     #info-hero h4 {
-        font-size: 12pt;
-        top: 220px;
-        width: 245px;
+        display: none;
     }
 
     .info-content {
@@ -175,37 +173,26 @@
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:530px){
-    #info-hero h1,
-    #info-hero h4 {
-        width: 240px;
-        left: 70%;
+        #info-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
     }
     
     #info-hero h1 {
+        width: 240px;
+        left: 70%;
+        border-bottom: none;
         font-size: 15pt;
-        top: 160px;
-    }
-
-    #info-hero h4 {
-        top: 185px;
+        top: 140px;
     }
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    #info-hero h1, 
-    #info-hero h4 {
+    #info-hero h1 {
         width: 230px;
         left: 67%;
-    }
-    
-    #info-hero h1 {
-        top: 130px;
-    }
-
-    #info-hero h4 {
-        top: 155px;
+        top: 120px;
     }
 
     .text-wrapper {

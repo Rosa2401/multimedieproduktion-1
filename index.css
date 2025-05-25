@@ -142,7 +142,7 @@
     #landing-hero h1 {
         font-size: 20pt;
         width: 90%;
-        top: 220px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 190px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 
     #welcome-container {
@@ -176,9 +176,13 @@
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:530px){
+    #landing-hero {
+        padding-top: 50px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+
     #landing-hero h1 {
         font-size: 17pt;
-        top: 190px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 170px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 }
 

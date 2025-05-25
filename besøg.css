@@ -133,7 +133,7 @@
     
     #visit-hero h1 {
         width: 750px;
-        top: 270px;
+        top: 230px;
     }
 
     #events-container {
@@ -169,7 +169,7 @@
     
     #visit-hero h1 {
         width: 500px;
-        top: 220px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 190px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 
     #events {
@@ -212,9 +212,13 @@
 /*------------------ EKSTRA H1 ------------------*/
 
 @media screen and (max-width:530px){
+    #visit-hero {
+        padding-top: 45px; /* for at få hero-billedet til at være lidt længere nede */
+    }
+
     #visit-hero h1 {
         font-size: 17pt;
-        top: 180px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
+        top: 160px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
         width: 400px;
         border-bottom: none;
     }
@@ -230,7 +234,7 @@
     #visit-hero h1 {
         font-size: 14pt;
         width: 85%;
-        top: 155px;
+        top: 135px;
     }
 
     #events {
