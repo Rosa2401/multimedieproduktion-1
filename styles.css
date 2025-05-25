@@ -698,9 +698,6 @@ nav ul {
 /*------------------ RESPONSIVE IPAD MINI ------------------*/
   
   @media only screen and (max-width: 768px) {
-    header {
-        padding: 5% 0 0 0; /* for at gøre plads til selfie cam */
-    }
     
     #nav-mobil {
         padding: 25% 0 0 0;
