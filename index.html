@@ -322,6 +322,8 @@
 
     </main>
 
+<!-- FOOTER -->
+
     <footer>
         <div id="footer-container">
             <div id="footer-container1">
@@ -387,6 +389,33 @@
         </div>
     </footer>
 
-<!-- INDSÆT FOOTER -->
+    <script>
+        const menuToggle = document.getElementById('mobil-menu-toggle');
+        const hamburger = document.getElementById('hamburger');
+    
+        menuToggle.addEventListener('change', function () {
+        if (menuToggle.checked) {
+            hamburger.classList.add('open');
+        } else {
+            hamburger.classList.remove('open');
+        }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggles = document.querySelectorAll('.mobil-submenu-toggle');
+
+            toggles.forEach(toggle => {
+                toggle.addEventListener('change', () => {
+                    if (toggle.checked) {
+                        toggles.forEach(otherToggle => {
+                            if (otherToggle !== toggle) {
+                                otherToggle.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
