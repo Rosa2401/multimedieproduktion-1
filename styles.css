@@ -55,7 +55,8 @@ a {
 }
 
 a:hover {
-    color: #efd7af;
+    color: #efd7af; /* min CTA farve */
+    transition: ease-in-out 0.2s;
 }
 
 .text-wrapper span { 
@@ -366,7 +367,7 @@ header a, header span {
     white-space: nowrap; /* "Butik og forhandlere" blev ved med at wrappe, så nowrap var nødvendigt*/
 }
 
-.pc-nav-links span:hover, .pc-nav-links a:hover {
+.pc-nav-links span:hover {
     color: #efd7af;
     transition: 0.2s ease-in-out;
 }
@@ -559,7 +560,7 @@ nav ul {
   
     .nav-mobil-links a:hover {
         color: #efd7af;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
   
     #header-social-media ul {
@@ -807,11 +808,6 @@ footer a {
     color: #57716f;
     transition: 0.2s ease-in-out; /* hover effekt på alle links i footer */
 }
-
-footer a:hover {
-    color: #efd7af;
-    transition: ease-in-out 0.2s; /* hover effekt på alle links i footer */
-}
   
 #footer-container {
     display: flex;
@@ -859,7 +855,6 @@ footer a:hover {
 
 #åbningstider {
     line-height: 1.55;
-    justify-content: space-between;
 }
 
 /*---------------- RESPONSIVE FOOTER ------------------*/

@@ -76,9 +76,9 @@
 <!-- RESPONSIVE HEADER -->
 
                 <div class="nav-mobil-container">
-                    <input type="checkbox" id="mobil-menu-toggle">
-                    <label for="mobil-menu-toggle" id="hamburger"> 
-                            <span></span>
+                    <input type="checkbox" id="mobil-menu-toggle"> <!-- responsiv burgermenu er en checkbox-menu der indeholder yderligere 4 checkbox-menuer -->
+                    <label for="mobil-menu-toggle" id="hamburger"> <!-- label for checkbox-->
+                            <span></span> <!-- jeg ville gerne have to linjer ovenpå hinanden, som runne roteres til et kryds, så jeg brugte span -->
                             <span></span>
                     </label>
 
@@ -87,9 +87,9 @@
                             <ul class="nav-mobil-links">
 
                                 <li class="mobil-dropdown">
-                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle1">
+                                    <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle1"> <!-- checkbox til dropdown-menuer -->
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle1">
-                                    <span class="mobil-submenu-open">
+                                    <span class="mobil-submenu-open"> 
                                         <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                         VINGÅRDEN
                                     </span>
@@ -179,6 +179,8 @@
         </div>
     </header>
 
+<!----------------- MAIN CONTENT ----------------->
+
     <main>
 
         <div id="artikler-hero">
@@ -205,7 +207,7 @@
 
             <div class="news-container">
 
-                <section class="text-wrapper">
+                <section class="text-wrapper"> <!-- denne er gennengående på sitet, og stylet i styles.css - den er desuden en section for bedre SEO og pga. der er en header -->
                     
                     <h3>
                         Vores Første Solaris-Høst
@@ -219,7 +221,7 @@
                     <p>
                         Følg med bag kulissen og læs om vores bæredygtige tilgang, vinmagerens tanker, og hvordan vejret har formet smagen i år.
                     </p>
-                    <br class="hidebr">
+                    <br class="hidebr"> <!-- dette <br> findes også adskillige steder i koden og har fået en class fordi den skjules i responsivt design -->
 
                     <a class="link-text" href="#">
                         Klik her for at læse hele historien.
@@ -227,13 +229,13 @@
 
                 </section>
 
-                <div class="img-wrapper">
+                <div class="img-wrapper"> <!-- denne wrapper er også gennemgående på sitet og stylet i styles.css -->
                     <img src="images/druer7.jpg" alt="HAVBLINKs solarisdruer i solen">
                 </div>
 
             </div>
 
-            <a class="button2" href="#"> <!-- Tilføjet usynlig knap ved min-width 1024px øverst, pga brug af flex-direction:column-reverse ved 768px breakpoint -->
+            <a class="button2" href="#"> <!-- tilføjet knap øverst her pga. brug af flex-direction:column-reverse ved 768px breakpoint, den er display:none indtil da -->
                 <span>
                     LÆS MERE
                 </span>
@@ -271,7 +273,7 @@
 
                 </section>
 
-                <a class="button2" href="#"> <!-- Tilføjet usynlig knap ved min-width 1024px øverst, pga brug af flex-direction:column-reverse ved 768px breakpoint -->
+                <a class="button2" href="#">
                     <span>
                         LÆS MERE
                     </span>
@@ -428,13 +430,13 @@
                 <h4>ÅBNINGSTIDER</h4>
                 <br>
                 <div id="åbningstider">
-                    <p>Mandag.........................Lukket</p>
-                    <p>Tirsdag.........................Lukket</p>
-                    <p>Onsdag...........................10-15</p>
-                    <p>Torsdag..........................10-15</p>
-                    <p>Fredag...........................10-13</p>
-                    <p>Lørdag...........................10-15</p>
-                    <p>Søndag.........................Lukket</p>
+                    <p>Mandag - lukket</p>
+                    <p>Tirsdag - lukket</p>
+                    <p>Onsdag- kl. 10-15</p>
+                    <p>Torsdag - kl. 10-15</p>
+                    <p>Fredag - kl. 10-13</p>
+                    <p>Lørdag - kl. 10-15</p>
+                    <p>Søndag - lukket</p>
                 </div>
                 <br>
                 <h4>BESØG OS</h4>
