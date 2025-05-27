@@ -110,17 +110,17 @@
     gap: 85%;
 }
 
-.next {
+#next {
     fill: #57716f;
     transition: ease-in-out 0.2s;
 }
 
-.next:hover {
+#next:hover {
     fill: #efd7af;
     transition: ease-in-out 0.2;
 }
 
-.back { /* der er ingen tidligere nyhedsartikler, så denne pil er "greyed out" */
+#back { /* der er ingen tidligere nyhedsartikler, så denne pil er "greyed out" */
     transform: rotate(180deg);
     fill: #57716f85;
 }
