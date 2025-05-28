@@ -188,7 +188,7 @@
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    #landing-hero h1 {
+    #landing-hero h1 { /* yderligere justering af h1 på små skærme */
         font-size: 14pt;
         width: 85%;
         top: 155px;

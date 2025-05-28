@@ -1,28 +1,28 @@
 /*-------------------- HERO ---------------------*/
 
 #info-hero {
-    width: 100%;
+    width: 100%; /* hero fylder hele bredden af skærmen */
 }
 
 #info-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* billedet skal fylde hele bredden af elementet det er placeret i */ 
+    height: auto; /* højden tilpasses automatisk */
+    object-fit: cover; /* sørger for at det dækker hele elementet uden af det forvrænges */
 }
 
 #info-hero h1, #info-hero h4 {
-    position: absolute;
-    text-align: center;
-    width: 460px;
-    padding: 0;
+    position: absolute; /* gør det muligt at placeret h1 ovenpå billedet */
+    text-align: center; /* teksten er placeret centreret i dets element */
+    width: 460px; /* fast bredde på overskriften i hero, bestemmer også borderens bredde */
+    padding: 0; /* ingen padding under denne, da der er skrift under borderen, og det ville fylde for meget */
     transform: translate(-50%, -50%); /* bruges i forbindelse med top og left til at centrere teksten på baggrunden */
     color: #eee9e1;
 }
 
 #info-hero h1 {
-    top: 250px; /* højden er mere fast, hvis det er i px vs % */
+    top: 250px; /* højden er mere fast, hvis den er i px vs % */
     left: 75%; /* men denne skal forblive i %, da bredden jo bliver mindre i px */
-    border-bottom: 2px solid #eee9e1;
+    border-bottom: 2px solid #eee9e1; /* 2px tyk border i samme farve som h1 */
 }
 
 #info-hero h4 {
@@ -55,25 +55,23 @@
 
 .info-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column; /* indhold vises i kolonner */
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 100%; /* elementet fylder hele bredden af skærmen */
 }
 
 .info-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    margin: 80px 60px 20px 60px;
-    gap: 5%;
+    flex-direction: row; /* content vises i en række */
+    align-items: center; /* justerer elementerne i containeren, så der er på linje med hinanden */
+    max-width: 80%; /* elementet på fylder 80% af skærmens bredde */
+    margin: 80px 60px 20px 60px; /* tilføjer luft omkring containeren */
+    gap: 5%; /* giver afstand mellem elementerne */
 }
 
 #info-container2 {
-    margin: -7px 0 80px 0;
+    margin: -7px 0 80px 0; /* fjerne luft over conainteren, tilføjer luft under containeren */
 }
 
 /*------------------ EKSTRA H1 ------------------*/
@@ -136,7 +134,7 @@
     }
 
     #info-hero h4 {
-        display: none;
+        display: none; /* h4 i hero skjules ved 768px */
     }
 
     .info-content {
@@ -156,7 +154,7 @@
 
     .img-wrapper {
         max-width: 100%;
-        height: auto;
+        height: auto; /* højden på wrapperen justeres automatisk */
         margin: 0 0 5% 0;
     }
 
@@ -189,7 +187,7 @@
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    #info-hero h1 {
+    #info-hero h1 { /* yderligere justering af h1 på små skærme */
         width: 230px;
         left: 67%;
         top: 120px;

@@ -1,34 +1,34 @@
 /*-------------------- HERO ---------------------*/
 
 #artikler-hero {
-    width: 100%;
+    width: 100%; /* hero fylder hele bredden af skærmen */
 }
 
 #artikler-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* billedet skal fylde hele bredden af elementet det er placeret i */ 
+    height: auto; /* højden tilpasses automatisk */
+    object-fit: cover; /* sørger for at det dækker hele elementet uden af det forvrænges */
 }
 
 #artikler-hero h1,
 #artikler-hero p {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
+    position: absolute; /* gør det muligt at placeret h1 ovenpå billedet */
+    text-align: center; /* teksten er placeret centreret i dets element */
+    left: 50%; /* bredden justeres i px ved forskellige skærme, så derfor er denne i % */
+    transform: translate(-50%, -50%); /* brugt til at hjælpe med at placere h1 ovenpå hero-billedet */
+    padding: 0; /* ingen padding under denne, da der er skrift under borderen, og det ville fylde for meget */
     color: #eee9e1;
 }
 
 #artikler-hero h1 {
-    width: 300px;
-    top: 220px;
-    border-bottom: 2px solid #eee9e1;
+    width: 300px; /* fast bredde på overskriften i hero, bestemmer også borderens bredde */
+    top: 220px; /* brugte px her fordi det var mere fast end % */
+    border-bottom: 2px solid #eee9e1; /* 2px tyk border i samme farve som h1 */
 }
 
 #artikler-hero p {
-    width: 350px;
-    top: 300px;
+    width: 350px; /* bredden på <p> elementet */
+    top: 300px; /* placering fra toppen af <p> elementet */
 }
 
 #news-info span { 
@@ -50,9 +50,8 @@
 
 /*------------------- CONTENT ------------------*/
 
-.news-container {
+.news-container { 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -60,9 +59,9 @@
     padding: 0;
 }
 
-.news-content {
+.news-content { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* kolonne-layout på siden */
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -80,39 +79,39 @@
 
 .news-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* tekst sidder til venstre, og billede til højre - denne ændres ved 768px */
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    max-width: 80%; /* jeg ville gerne have lidt plads ude til siderne */
     margin: 60px;
-    gap: 5%;
+    gap: 5%; /* mindre gap mellem billede og tekst */
 }
 
 #news-info, #news-info-line {
-    display: none; /* jeg flytter i 1024px responsiv hero <p> ned under hero-billedet, indtil da er den gemt */
+    display: none; /* jeg flytter i 1024px responsiv hero <p> ned under hero-billedet med en linje under, indtil da er elemterne gemt */
 }
 
-#search-container {
+#search-container { /* en div nederst på siden med frem- og tilbage-pile */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* pilene er øverst, og der er en knap under dem, indtil 768px, hvor alle 3 elementer er på linje */
     justify-content: center;
     width: 100%;
 }
 
 #back-next {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row; /* pilene skal være i en række */
+    justify-content: center; 
     align-items: center;
     padding: 0 10%;
     margin: -50px 0 30px 0;
     width: 100%;
-    gap: 85%;
+    gap: 85%; /* de skal være på hver sin side, men på linje med artikel-elementerne over dem */
 }
 
 #next {
-    fill: #57716f;
-    transition: ease-in-out 0.2s;
+    fill: #57716f; /* farveskift på .svg-filen */
+    transition: ease-in-out 0.2s; /* og en blød transition */
 }
 
 #next:hover {
@@ -133,7 +132,7 @@
 
 /*------------------ EKSTRA H1 ------------------*/
 
-@media screen and (max-width:1150px){
+@media screen and (max-width:1150px){ /* måtte tilføje et ekstra breakpoint til headeren på alle sider, dog justeret lidt forskelligt, så derfor er den ikke under styles.css */
     #artikler-hero {
         padding-top: 20px; /* for at få hero-billedet til at være lidt længere nede */
     }
@@ -202,7 +201,7 @@
     
     #artikler-hero h1 {
         width: 180px;
-        border-bottom: none;
+        border-bottom: none; /* border-bottom kom i vejen, da skriften blev mindre, derfor er den skjult fra 768px */
         top: 190px;
     }
 
@@ -241,18 +240,10 @@
     .button2 {
         margin: 40px;
     }
-    
-    .button3 {
-        display: none;
-    }
 
-    .button4 {
-        display: flex;
-    }
-
-    #back-next {
-        margin: 20px 0 30px 0;
-        justify-content: space-between;
+    #back-next { 
+        margin: 20px 0 30px 0; /* tilføjer lidt mellerum og og lidt mere under elementet */
+        justify-content: space-between; /* pilene og knappen skal være placeret på linje og jævnt fordelt på det element de er placeret i */
         gap: 0;
     }
 
@@ -260,6 +251,14 @@
         min-width: 40px;
         max-width: 40px;
         height: auto;
+    }
+
+    .button4 {
+        display: flex; /* knappen under back-next div skjules og en ny knap, der sidder på linje med pilene, vises i stedet - for at spare på plads på skærme */
+    }
+
+    .button3 {
+        display: none;
     }
 }
 

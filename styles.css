@@ -202,14 +202,14 @@ a:hover {
 
 /*---------------------- LINES ---------------------- */
 
-.line, .line2 {
-    border-bottom: #57716f 2px solid;
-    padding: 0 10%;
-    width: 80%;
+.line, .line2 { /* styling af linjer på tværs af sitet, som er der for at siderne kan se lidt mere opdelte og organiserede ud */
+    border-bottom: #57716f 2px solid; /* den skal have samme farve som det meste brødtekst og være 2px bred tyk */
+    padding: 0 10%; /* der skal være lidt mellemrum og over under linjerne, så de ikke sidder helt oppe ad andre elementer */
+    width: 80%; /* er samme bredde som tekst-sektioner er på tværs af sitet */
 }
 
 .line2 {
-    display: none;
+    display: none; /* line2 er på artikler.html og vises først ved 768px */
     justify-content: center;
     margin: 0 auto 20px auto;
 }
@@ -225,7 +225,7 @@ a:hover {
 
 /*------------------ RESPONSIVE IPAD MINI ------------------*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px){ /* knapper skal gøres lidt mindre på mindre skærme */
     .button, 
     .button2, 
     .button3,
@@ -239,13 +239,13 @@ a:hover {
     }
 
     .line2 {
-        display: flex;
+        display: flex; /* linje på artikler.css der opdeler content fra frem-og-tilbage-elementer nederst på siden */
     }
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
-@media screen and (max-width:430px){
+@media screen and (max-width:430px){ /* knapper skal gøres lidt mindre på mindre skærme */
     .button, 
     .button2, 
     .button3 
@@ -258,11 +258,11 @@ a:hover {
 
 /* ---------------------- DIVERSE TEXT ---------------------- */
 
-.text-wrapper {
+.text-wrapper { /* gennemgående element på sitet til skrift-sektioner */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* tekst i wrapperen skal være ovenpå hinanden */
     justify-content: center;
-    text-align: left;
+    text-align: left; /* skriften skal starte fra venstre - denne ændres kun i responsiv på bæredygtighed.html */
     width: 100%;
 }
 
@@ -271,15 +271,15 @@ a:hover {
 }
 
 .link-text {
-    text-decoration: none;
+    text-decoration: none; /* ingen linje under links */ 
     font-family: "source-sans-pro", sans-serif;
     font-weight: 700;
     font-size: 14pt;
-    color: #57716f;
+    color: #57716f; /* gennemgående søgrøn tekstfarve på sitet */
 }
 
 .link-text:hover {
-    color: #efd7af;
+    color: #efd7af; /* links får CTA-farven ved hover */
 }
 
 /* --------------------- RESPONSIV --------------------- */
@@ -309,23 +309,23 @@ a:hover {
 /* ---------------------- HEADER ---------------------- */
 
 #havblink-logo {
-    position: relative;
-    z-index: 999;
+    position: relative; /* brugt så logoet kan ligge ovenpå burgermenuen, når den bliver aktiv ved 1024px */
+    z-index: 998;
 }
 
 header {
-    position: fixed;
+    position: fixed; /* headeren er altid synlig */
     height: auto;
     width: 100%;
     background-color: #57716f;
-    z-index: 1000;
+    z-index: 999;
 }
 
 header a, header span {
     text-decoration: none;
     font-weight: 600;
     color: #eee9e1;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; /* alle links på sitet får en 0.2 transition til og fra den dybe beige farve */
     cursor: pointer;
 }
 
@@ -334,13 +334,12 @@ header a, header span {
     justify-content: space-between;
     align-items: center;
     padding: 2%;
-    flex-wrap: wrap;
     width: 100%;
 }
 
 .havblink img {
     width: 270px;
-    height: auto;
+    height: auto; /* uden denne er logoet ikke centreret lodret på headeren */
 }
 
 .havblink img a {
@@ -385,8 +384,8 @@ nav ul {
     padding: 10px 5px;
 }
 
-.pc-menu-point.active {
-    border-bottom: 2px solid #efd7af;
+.pc-menu-point.active { /* .active er brugt på hele sitet, så man kan se hvilken side man er på */
+    border-bottom: 2px solid #efd7af; /* hovedpunkterne i headeren får også en streg under */
     color: #efd7af
 }
 
@@ -417,7 +416,7 @@ nav ul {
     gap: 0; /* ingen gap mellem links i dropdown menuen */
     pointer-events: none;
     transform: translateY(-10px); /* gør at dropdown menuen kommer op når man hoverer over den - AI forslag */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
     z-index: 999;
 }
 
@@ -449,17 +448,8 @@ nav ul {
 
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
 
-#hamburger {
-    height: 90px;
-    cursor: pointer;
-    display: none;
-    top: 1%;
-    right: 1%;
-    padding: 1% 2%;
-}
-  
 #mobil-menu-toggle, .mobil-submenu-toggle, #nav-mobil {
-    display: none;
+    display: none; /* checkboxe og burgermenuens indhold er skjult indtil 1024px */
 }
 
 @media screen and (max-width:1024px){
@@ -473,29 +463,32 @@ nav ul {
         position: relative;
         cursor: pointer;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* de to streger skal være placeret lodret */
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 8px; /* de skal være placeret 8px adskilt fra hinanden */
+        top: 1%;
+        right: 1%;
+        padding: 1% 2%;
         z-index: 999;
     }
       
     #hamburger span {
         display: block;
-        width: 30px;
-        height: 3px;
-        background-color: #eee9e1;
+        width: 30px; /* de to streger skal være 30px brede */
+        height: 3px; /* og 3px tykke */
+        background-color: #eee9e1; /* der er lyse beige, ligesom baggrundsfarven */
         border-radius: 2px;
-        transition: transform 0.2s ease-in-out background-color 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out background-color 0.2s ease-in-out; /* og bliver samme dybere beige ved hover med transition */
         transform-origin: center;
     }
 
     #hamburger:hover span {
         background-color: #efd7af;
-        transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; /* transition til farven */
     }
 
-    #hamburger.open span:nth-child(1) { 
+    #hamburger.open span:nth-child(1) { /* hver span roteres 45 grader, når den klikkes på */
         transform: rotate(45deg) translate(7px, 5px);
         transition: transform 0.2s ease-in-out;
     }
@@ -675,18 +668,18 @@ nav ul {
 
     .mobil-submenu-open:hover {
         color: #efd7af;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 
     .mobil-submenu-open.active {
         color: #efd7af;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
         font-weight: 700;
     }
     
     .mobil-submenu a.active {
         color: #efd7af;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
         font-weight: 700;
     }
 }
@@ -695,7 +688,6 @@ nav ul {
 /*------------------ RESPONSIVE IPAD MINI ------------------*/
   
   @media only screen and (max-width: 768px) {
-    
     #nav-mobil {
         padding: 25% 0 0 0;
     }

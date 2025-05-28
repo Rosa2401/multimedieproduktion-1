@@ -1,30 +1,28 @@
-body {
-    background-color: #eee9e1;
-}
+
 
 /*-------------------- HERO ---------------------*/
 
 #vine-hero {
-    width: 100%;
-    padding: 5% 0 0 0;
+    width: 100%; /* hero fylder hele bredden af skærmen */
+    padding: 5% 0 0 0; /* tilføjer lidt padding over hero-billedet, dvs. under headeren */
 }
 
 #vine-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* billedet skal fylde hele bredden af elementet det er placeret i */ 
+    height: auto; /* højden tilpasses automatisk */
+    object-fit: cover; /* sørger for at det dækker hele elementet uden af det forvrænges */
 }
 
 #vine-hero h1 {
-    width: 420px;
-    position: absolute;
-    text-align: center;
-    top: 290px;
-    left: 68%;
+    width: 420px; /* fast bredde på overskriften i hero, bestemmer også borderens bredde */
+    position: absolute; /* gør det muligt at placeret h1 ovenpå billedet */
+    text-align: center; /* teksten er placeret centreret i dets element */
+    top: 290px; /* brugte px her fordi det var mere fast end % */
+    left: 68%; /* bredden justeres i px ved forskellige skærme, så derfor er denne i % */
     color: #57716f;
-    transform: translate(-50%, -50%);
-    padding: 0 0 12px 0;
-    border-bottom: 2px solid #57716f;
+    transform: translate(-50%, -50%); /* brugt til at hjælpe med at placere h1 ovenpå hero-billedet */
+    padding: 0 0 12px 0; /* tilføjer lidt luft mellem h1 og border, så den ikke er placeret lige under skriften */
+    border-bottom: 2px solid #57716f; /* 2px tyk border i samme farve som h1 */
 }
 
 /*------------------- VELKOMST ------------------*/
@@ -190,7 +188,7 @@ body {
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    #vine-hero h1 {
+    #vine-hero h1 { /* yderligere justering af h1 på små skærme */
         width: 200px;
         top: 120px;
     }

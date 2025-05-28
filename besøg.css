@@ -1,114 +1,109 @@
 /*-------------------- HERO ---------------------*/
 
 #visit-hero {
-    width: 100%;
+    width: 100%; /* hero fylder hele bredden af skærmen */
 }
 
 #visit-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* billedet skal fylde hele bredden af elementet det er placeret i */ 
+    height: auto; /* højden tilpasses automatisk */
+    object-fit: cover; /* sørger for at det dækker hele elementet uden af det forvrænges */
 }
 
 #visit-hero h1 {
-    width: 910px;
-    position: absolute;
-    text-align: center;
-    top: 290px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 0 12px 0;
-    border-bottom: 2px solid #eee9e1;
+    width: 910px; /* fast bredde på overskriften i hero, bestemmer også borderens bredde */
+    position: absolute; /* gør det muligt at placeret h1 ovenpå billedet */
+    text-align: center; /* teksten er placeret centreret i dets element */
+    top: 290px; /* brugte px her fordi det var mere fast end % */
+    left: 50%; /* mens bredden justeres i px ved forskellige skærme, så derfor er denne i % */
+    transform: translate(-50%, -50%); /* brugt til at hjælpe med at placere h1 ovenpå hero-billedet */
+    padding: 0 0 12px 0; /* tilføjer lidt luft mellem h1 og border, så den ikke er placeret lige under skriften */
+    border-bottom: 2px solid #eee9e1; /* 2px tyk border i samme farve som h1 */
 }
 
 /*------------------- EVENTS ------------------*/
 
 #visit-container {
-    background-color: #c7e4dc;
+    background-color: #c7e4dc; /* baggrundsfarve, samme farve som .svg-elementet */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* indhold vises i kolonner */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-
+    width: 100%; /* elementet fylder hele bredden af skærmen */
 }
 
 #background-wave {
-    margin: -10% 0 -5px 0; /* for at få bølgen til at gå under footer uden et hvidt mellemrum*/
+    margin: -10% 0 -5px 0; /* for at få bølgen til at gå under footer uden et hvidt mellemrum */
     display: block; /* for at få bølgen til at fylde hele bredden af skærmen */
     width: 100%;
     height: auto;
 }
 
 #background-wave svg {
-    fill: #c7e4dc; /* farven på bølgen */
+    fill: #c7e4dc; /* farven på bølgen, samme som #visit-container */
 }
 
 #events-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 3% 0 5% 0;
-    gap: 30%;
+    justify-content: center; /* content skal være centeret i containeren */
+    margin: 3% 0 5% 0; /* giver luft over under containeren */
+    gap: 10%; /* stor afstand mellem elementer i containeren */
+    width: 80%;
 }
 
 #events {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* indholdet står i en kolonne */
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    align-items: center; /* uden denne bliver knappen i elementet bred */
+    text-align: center; /* alt tekst i elementet er centreret */
+    width: 80%;
     padding: 0;
 }
 
 #events h4 {
-    font-weight: 600;
-    width: 370px;
+    font-weight: 600; /* gør h4 fed */
+    width: 370px; /* fast bredde til h4 */
 }
 
 #events p {
-    font-family: "playfair-display", serif;
-    line-height: 1.5;
+    font-family: "playfair-display", serif; /* bruger serif specifikt til denne <p> */
+    line-height: 1.5; /* giver lidt luft mellem linjerne */
 }
 
 .button {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 0; /* giver luft over knappen */
 }
 
 #events-img-wrapper {
-    width: 420px;
-    height: 559px;
+    width: 420px; /* fast bredde til billedwrapperen */
+    height: 559px; /* fast højre til billedwrapperen */
     padding: 0;
+    margin: 0 60px 0 0;
 }
 
 /*------------------ CONTENT ------------------*/
 
 #visit-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* content placeret i en kolonne */
+    align-items: center; /* centrerer elementerne i containeren */
+    text-align: center; /* overskriften i elementet bliver centreret */
     width: 100%;
     margin: 4% 0 4% 0;
 }
 
 #visit-content h1 {
-    color: #57716f;
+    color: #57716f; /* h1 skal være samme farve som brødtekst */
 }
 
 .info-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    margin: 50px 60px;
-    gap: 5%;
+    flex-direction: row; /* content vises i en række */
+    align-items: center; /* centrerer elementerne i containeren */
+    max-width: 80%; /* elementet på fylder 80% af skærmens bredde */
+    margin: 50px 60px; /* tilføjer luft omkring containeren */
+    gap: 5%; /* giver afstand mellem elementerne */
 }
 
 /*------------------ EKSTRA H1 ------------------*/
@@ -223,15 +218,15 @@
         border-bottom: none;
     }
 
-    #events-img-wrapper {
-        display: none;
+    #events-img-wrapper { 
+        display: none; /* billedet fyldte for mig, så det bliver skjult på mindre skærme */
     }
 }
 
 /*------------------ RESPONSIVE IPHONE 14 PRO MAX TIL M MOBIL ------------------*/
 
 @media screen and (max-width:430px){
-    #visit-hero h1 {
+    #visit-hero h1 { /* yderligere justering af h1 på små skærme */
         font-size: 14pt;
         width: 85%;
         top: 135px;
