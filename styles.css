@@ -849,6 +849,10 @@ footer a {
     line-height: 1.55;
 }
 
+.showbr {
+    display: none;
+}
+
 /*---------------- RESPONSIVE FOOTER ------------------*/
 
 /*------------------ RESPONSIVE IPAD PRO ------------------*/
@@ -879,6 +883,10 @@ footer a {
     
     .hidebr {
         display: none; /* footerbr skjules på skærme mindre end 768px, så der ikke er så stort mellemrum */
+    }
+
+    .showbr {
+        display: flex;
     }
 }
 
