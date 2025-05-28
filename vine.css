@@ -54,44 +54,44 @@
 
 #wine-content-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    padding: 4% 5%;
-    gap: 9%;
+    flex-direction: row; /* content placeres på en række */
+    justify-content: center; /* centerer indholdet horisontalt */
+    flex-wrap: wrap; /* vin-containerne rykke til næste linje, når skærmens bredde justeres */
+    align-items: center; /* centrerer indholdet vertikalt */
+    width: 100%; /* containeren fylder hele bredden afskærmen */
+    padding: 4% 5%; /* giver luft omkring containeren */
+    gap: 9%; /* mellemrum mellem vin-containerne */
 }
 
 .wine-container {
-    width: 18%;
-    padding: 0 0 7% 0;
+    width: 18%; /* vin-containere må være 18% af skærmens bredde */
+    padding: 0 0 7% 0; /* giver luft under vin-containere */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column; /* indhold i containeren placeres i en kolonne */
+    justify-content: center;  
+    text-align: center; /* al tekst er centreret */
 }
 
 .wine-container img {
-    height: auto;
+    height: auto; /* billedet forbliver de samme proportioner */
 }
 
 .wine-container h4 {
     width: 100%;
-    padding: 2% 0;
-    font-weight: 600;
-    border-bottom: 2px solid #57716f;
+    padding: 2% 0; /* giver luft over og under h4 */
+    font-weight: 600; /* lidt fed tekst */
+    border-bottom: 2px solid #57716f; /* bestemmer farven på h4 og giver en 2p tyk border under */
 }
 
 .wine-container p {
-    padding: 2% 0 5%;
-    width: 75%;
-    margin: 0 auto;
+    padding: 2% 0 5%; /* giver luft over og under <p> */
+    width: 75%; /* begrænset bredde på <p> */
+    margin: 0 auto; /* centerer <p> vandret */
 }
 
 .button2 {
-    width: 100%;
-    display: block;
+    width: 100%; /* knappen er samme bredde på containeren, dvs. som både billede og borderen under h4 */
+    display: block; /* knappen er et blok-element */
 }
 
 /*------------------ VINE REPSONSIVE ------------------*/
@@ -116,26 +116,25 @@
     }
     
     #vine-hero h1 {
-        width: 350px;
-        border-bottom: 2px solid #57716f;
-        top: 210px;
+        width: 350px; /* justerer bredden på h1 i hero */
+        top: 210px; /* justerer hvor h1 i hero er placeret i forhold til øverste kant af skærmen */
     }
 
     #wine-welcome img {
-        padding: 5% 28% 0;
+        padding: 5% 28% 0; /* justerer luft over og på begge sider af billedet */
     }
 
     #wine-welcome p {
-        padding: 4% 26% 2% 26%;
+        padding: 4% 26% 2% 26%; /* justerer luft på alle sider af <p> */
     }
 
     .wine-container {
-        width: 23%;
+        width: 23%; /* justerer bredden på vin-containeren */
     }
     
     #wine-content-container {
-        gap: 10%;
-        padding: 2% 5%;
+        gap: 10%; /* justerer mellemrum elementerne i containeren */
+        padding: 2% 5%; /* giver luft på alle sider af containeren */
     }
 }
 
@@ -147,9 +146,9 @@
     }
 
     #vine-hero h1 {
-        width: 250px;
-        border-bottom: none;
-        top: 190px;
+        width: 250px; /* justerer bredden på h1 i hero */
+        border-bottom: none; /* fjerne border under h1 */
+        top: 190px; /* justerer hvor h1 i hero er placeret i forhold til øverste kant af skærmen */
     }
 
     #wine-welcome img {
@@ -157,15 +156,15 @@
     }
 
     #wine-welcome p {
-        padding: 4% 23% 2% 23%;
+        padding: 4% 23% 2% 23%; /* justerer luft på alle sider af <p> */
     }
 
     .wine-container {
-        width: 25%;
+        width: 25%; /* justerer bredden på vin-containeren */
     }
     
     #wine-content-container {
-        gap: 10%;
+        gap: 10%; /* justerer mellemrum elementerne i containeren */
     }
 
     .wine-container p {
@@ -202,7 +201,7 @@
     }
 
     .wine-container {
-        width: 42%;
+        width: 42%; /* justerer bredden på vin-containeren, så der nu kun er to per række */
     }
     
     #wine-content-container {

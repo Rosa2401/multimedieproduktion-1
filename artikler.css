@@ -12,7 +12,7 @@
 
 #artikler-hero h1,
 #artikler-hero p {
-    position: absolute; /* gør det muligt at placeret h1 ovenpå billedet */
+    position: absolute; /* gør det muligt at placeret h1 og p ovenpå billedet */
     text-align: center; /* teksten er placeret centreret i dets element */
     left: 50%; /* bredden justeres i px ved forskellige skærme, så derfor er denne i % */
     transform: translate(-50%, -50%); /* brugt til at hjælpe med at placere h1 ovenpå hero-billedet */

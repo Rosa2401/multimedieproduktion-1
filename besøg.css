@@ -127,8 +127,8 @@
     }
     
     #visit-hero h1 {
-        width: 750px;
-        top: 230px;
+        width: 750px; /* justering af bredden på h1 i hero */
+        top: 230px; /* justering af placering af h1 i hero */
     }
 
     #events-container {
@@ -137,15 +137,15 @@
     }
 
     #events {
-        width: 250px;
+        width: 250px; /* justering af bredden på events-elementet */
     }
 
-    #events-img-wrapper {
+    #events-img-wrapper { /* justering af størrelsen på billedet */
         height: 450px;
         width: 300px;
     }
 
-    .img-wrapper { /*billedet skal helst være mindre på mindre skærme */
+    .img-wrapper { /* billedet skal helst være mindre på mindre skærme */
         width: 310px;
         height: 250px;
     }
@@ -163,27 +163,27 @@
     }
     
     #visit-hero h1 {
-        width: 500px;
+        width: 500px; /* justering af bredden på h1 i hero */
         top: 190px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
     }
 
     #events {
-        width: 240px;
-        margin: 15px 0;
+        width: 240px; /* justering af bredden på events-elementet */
+        margin: 15px 0; /* giver luft over og under events-elementet */
     }
 
-    #events-img-wrapper {
+    #events-img-wrapper { /* justering af størrelsen på billedet */
         height: 300px;
         width: 170px;
     }
 
     .info-container {
-        margin: 40px 20px;
+        margin: 40px 20px; /* giver mere luft over og under containeren, og mindre på begge sider af containeren */
     }
 
     .img-wrapper {
-        width: 320px;
-        padding: 0 0 6% 0;
+        width: 320px; /* billedet skal helst være mindre på mindre skærme */
+        padding: 0 0 6% 0; /* giver luft under billedet */
     }
 
     .text-wrapper span, .start-text { 
@@ -191,8 +191,8 @@
     }
 
     .info-container {
-        flex-direction: column;
-        max-width: 80%;
+        flex-direction: column; /* content i containeren skal placeres i en kolonne, fremfor en række på skærmen mindre end 768px */
+        max-width: 80%; /* maks. bredde på containeren */
     }
 
     #info-container2 {
@@ -214,8 +214,8 @@
     #visit-hero h1 {
         font-size: 17pt;
         top: 160px; /* for at få teksten til at være mere centreret i forhold til hero-billedet */
-        width: 400px;
-        border-bottom: none;
+        width: 400px; /* justerer bredden på h1 i hero */
+        border-bottom: none; /* hero h1 border skal fjernes på mindre skærme */
     }
 
     #events-img-wrapper { 
@@ -237,15 +237,15 @@
     }
 
     #events-img-wrapper {
-        display: none;
+        display: none; /* billedet fjernes på små skærme, da de fylder for meget */
     }
 
     .img-wrapper {
-        width: 250px;
+        width: 250px; /* justering af størrelsen på billedet */
         height: 200px;
     }
 
     .text-wrapper span { 
-        font-size: 11pt;
+        font-size: 11pt; /* mindre tyk font, da det kan være svært at læse på små skærme */
     }
 }
