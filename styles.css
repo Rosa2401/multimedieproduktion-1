@@ -425,7 +425,7 @@ nav ul {
     margin: 0;
     height: auto;
     width: 170px;
-    border-bottom: 1px solid #eee9e1;
+    border-bottom: 1px solid #eee9e1; /* giver menupunkterne i border for at holde dem tydeligere adskilt */
     font-family: "playfair-display", serif;
     font-size: 12pt;
 }
@@ -454,7 +454,7 @@ nav ul {
 
 @media screen and (max-width:1024px){
     #nav-desktop {
-        display: none;
+        display: none; /* skjuler desktop menu ved 1024px */
     }
   
     #hamburger {
@@ -498,69 +498,69 @@ nav ul {
         transition: transform 0.2s ease-in-out;
     }
   
-    #mobil-menu-toggle:checked ~ nav#nav-mobil {
+    #mobil-menu-toggle:checked ~ nav#nav-mobil { /* viser mobilmenuen når burgermenu trykkes på */
         display: flex;
     }
   
     #nav-mobil {
-        display: none;
-        position: fixed;
-        flex-direction: column;
+        display: none; /* menuen er som standard skjult */
+        position: fixed; /* menuen ligger fast ovenpå indholdet */
+        flex-direction: column; /* menuindhold placeret i en kolonne */
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #57716f95;
-        backdrop-filter: blur(3px);
-        padding: 17% 0 0 0;
-        z-index: 998;
+        height: 100%; /* menuen fylder hele højden af skærmen */
+        width: 100%; /* menuen fylder hele bredden af skærmen */
+        background-color: #57716f95; /* halvgennemsigtig mørk søgrøn baggund */
+        backdrop-filter: blur(3px); /* gør content under menuoverlayet sløret */
+        padding: 17% 0 0 0; /* tilføjer plads over indholdet */
+        z-index: 998; /* menuen ligger ovenpå næsten alt andet */
     }
   
-    #nav-mobil-content {
+    #nav-mobil-content { /* wrapper til menuens indhold */
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* content er i en kolonne */
         justify-content: right;
         height: 100%;
     }
   
     .nav-mobil-links {
-        list-style: none;
+        list-style: none; /* fjerner standard bullet-punkter */
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        flex-direction: column; /* content er i en kolonne */
+        align-items: flex-end; /* højrejusteret menu */
         width: 100%;
-        gap: 1%;
-        padding: 0 2%;
-        margin: 2% 0 0 0;
+        gap: 1%; /* tilføjer lidt luft mellem links */
+        padding: 0 2%; /* links rykkes lidt ind fra højre */
+        margin: 2% 0 0 0; /* tilføjer lidt luft over links */
     }
   
     .nav-mobil-links a {
         display: flex;
-        justify-content: right;
+        justify-content: right; /* teksten placeres til højre */
         align-items: center;
         font-size: 16pt;
         font-weight: 600;
         font-family: "playfair-display", serif;
-        letter-spacing: 1px;
-        color: #eee9e1;
-        border-bottom: 2px solid #eee9e1;
+        letter-spacing: 1px; /* mere afstand mellem bogstaverne */
+        color: #eee9e1; /* lys beige ovenpå den mørkegrønne baggrund */
+        border-bottom: 2px solid #eee9e1; /* giver menupunkterne en border for at holde dem tydeligere adskilt */
         text-align: right;
         padding: 1% 2%;
-        margin: -1%;
+        margin: -1%; 
         width: 220px;
-        height: 55px;
+        height: 55px; /* fast højde for konsistent udseende */
     }
   
-    .nav-mobil-links a:hover {
+    .nav-mobil-links a:hover { /* hover-effekter på menupunkter, der passer med resten af sitet */
         color: #efd7af;
         transition: 0.2s ease-in-out;
     }
   
     #header-social-media ul {
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-between;
+        flex-direction: row; /* ikonerne placeres i en række */
+        list-style-type: none; /* fjerne bullet-punkter */
+        justify-content: space-between; /* ikonerne placeres i hver deres ende af elementet */
         align-items: center;
         gap: 7%;
         width: 100px;
@@ -584,22 +584,29 @@ nav ul {
     #header-social-media svg {
         display: block;
         height: auto;
-        width: 45px;
-        fill: #eee9e1;
-        transition: ease-in-out 0.2s;
+        width: 45px; /* fast bredde på ikonerne */
+        fill: #eee9e1; /* .svg-filens farve */
+        transition: ease-in-out 0.2s; /* blød transition */
     }
 
     #header-social-media svg:hover {
-        fill: #efd7af;
-        transition: ease-in-out 0.2s;
+        fill: #efd7af; /* skifter farve ved hover */
+        transition: ease-in-out 0.2s; /* blød transition */
     }
   
     .open-this {
         height: 22px;
-        rotate: 0deg;
-        transition: transform 0.2s ease;
+        rotate: 0deg; /* som standard ikke roteret */
+        transition: transform 0.2s ease; /* blød transition */
     }
   
+    #mobil-submenu-toggle1:checked + label .open-this,
+    #mobil-submenu-toggle2:checked + label .open-this,
+    #mobil-submenu-toggle3:checked + label .open-this,
+    #mobil-submenu-toggle4:checked + label .open-this {
+        transform: rotate(180deg); /* roterer 180 grader når menupunktet klikkes på */
+    }
+
     .mobil-toggle-label {
         display: flex;
         align-items: center;
@@ -612,13 +619,6 @@ nav ul {
     #mobil-submenu-toggle3:checked ~ .mobil-submenu,
     #mobil-submenu-toggle4:checked ~ .mobil-submenu {
         display: block;
-    }
-  
-    #mobil-submenu-toggle1:checked + label .open-this,
-    #mobil-submenu-toggle2:checked + label .open-this,
-    #mobil-submenu-toggle3:checked + label .open-this,
-    #mobil-submenu-toggle4:checked + label .open-this {
-        transform: rotate(180deg);
     }
   
     .mobil-submenu-open {
@@ -639,15 +639,15 @@ nav ul {
     }
   
     .mobil-dropdown {
-        position: relative;
+        position: relative; /* gør det muligt at placere undermenuen relativt hertil */
     }
   
     .mobil-submenu {
         display: none;
-        position: absolute;
-        width: 220px;
+        position: absolute; /* undermenuen bliver placeret i forhold til .mobil-dropdown */
+        width: 220px; /* bredde på menupunkterne */
         height: 150px;
-        right: 100%;
+        right: 100%; /* ligger til venstre for dens parent */
         top: 0%;
         margin: 0;
         gap: 0;
@@ -671,13 +671,13 @@ nav ul {
         transition: 0.2s ease-in-out;
     }
 
-    .mobil-submenu-open.active {
+    .mobil-submenu-open.active { /* aktive sider skal være synlige, denne er tilføjet i headeren, så menupunktet for den side du befinder dig på er beige */
         color: #efd7af;
         transition: 0.2s ease-in-out;
         font-weight: 700;
     }
     
-    .mobil-submenu a.active {
+    .mobil-submenu a.active { /* aktive sider skal være synlige, denne er tilføjet i headeren, så menupunktet for den side du befinder dig på er beige */
         color: #efd7af;
         transition: 0.2s ease-in-out;
         font-weight: 700;
@@ -738,7 +738,7 @@ nav ul {
     }
 
     .open-this {
-        height: 15px;
+        height: 15px; /* åbne ikonets størrelse gøres mindre */
     }
 
     .mobil-submenu {
@@ -867,8 +867,8 @@ footer a {
         flex-direction: column; /* footer-container skal være i kolonne i stedet for række */
         justify-content: center; /* alt content i footer skal være centreret */
         align-items: center;
-        text-align: center;
-        width: 90%;
+        text-align: center; /* teksten skal centreres */
+        width: 90%; /* bredden er 90% i stedet for hele skærmen, så der er luft til siderne */
         padding: 5% 0 0 0;
     }
 
