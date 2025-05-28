@@ -245,21 +245,21 @@
 
         </div>
 
-        <div id="visit-content">
+        <div id="visit-content"> <!-- alt main content er i en container/wrapper, så det er nemmere at samle -->
 
             <h1>
                 VORES ARRANGEMENTER
             </h1>
 
-            <div class="info-container">
+            <div class="info-container"> <!-- første container/wrapper er en samlet af elementer, der gentages 3 gange på sitet, men med små ændringer -->
 
                 <div class="img-wrapper">
                     <img src="images/hvidvinsflaske7.jpg" alt="Flotte HAVBLINK-hvidvinsflasker foran hvid baggrund">
                 </div>
 
-                <div class="text-wrapper">
+                <div class="text-wrapper"> <!-- brug er wrapper til tekst, så alt tekst er samlet i en div, og let at placere - er også stylet i styles.css -->
                     <p>
-                        <span class="start-text">
+                        <span class="start-text"> <!-- en detalje jeg har benyttet på 2 sider, hvor de første par er i en span så jeg kan gøre skriftstørrelsen og -tykkelsen lidt større -->
                             Dyk ned i smagen af kyst, sol og kærlighed
                         </span> 
                         til håndværket. 
@@ -274,13 +274,13 @@
                         Uanset hvad du vælger, guider vi dig igennem smagsnuancer, produktion og historier fra vinmarken. En sanselig oplevelse, der både oplyser og forkæler.
                     </p>
                     <br>
-                    <a class="link-text" href="#">
+                    <a class="link-text" href="#"> <!-- a her har fået en class, da den skal skjules ved 768px -->
                         Læs mere om vinsmagning og booking her.
                     </a>
                 </div>
 
                 
-                <a class="button2" href="#">
+                <a class="button2" href="#"> <!-- knap der er skjult indtil 768px -->
                     <span>
                         LÆS MERE
                     </span>
@@ -288,12 +288,12 @@
 
             </div>
 
-            <div class="line"> 
+            <div class="line"> <!-- kunne også laves som span, er tilføjet for at bryde layout lidt op -->
             </div>
 
-            <div id="info-container2" class="info-container">
+            <div id="info-container2" class="info-container"> <!-- har også fået et id, da den skal bruge flex-direction: column efter ved 768px -->
 
-                <a class="button2" href="#"> <!-- Tilføjet usynlig knap ved min-width 1024px øverst, pga brug af flex-direction:column-reverse ved 768px breakpoint -->
+                <a class="button2" href="#"> <!-- usynlig knap indtil 768px, her placeret øverst, pga. brug af flex-direction:column-reverse ved 768px breakpoint -->
                     <span>
                         LÆS MERE
                     </span>
