@@ -181,12 +181,12 @@
 
     <main>
 
-        <div id="vine-hero">
+        <div id="vine-hero"> <!-- hero er i sin egen div, så den placeres separat fra andet content -->
             <img src="images/hvidvinsflaske5.jpg" alt="Flotte HAVBLINK-hvidvinsflasker foran hvid baggrund">
             <h1>VORES HVIDVINE</h1>
         </div>
 
-        <div id="wine-welcome">
+        <div id="wine-welcome"> <!-- velkomst på siden som er samlet i en div -->
             <img src="assets/logo-seagreen.svg" alt="HAVBLINK logo">
             <p>
                 Hos <span>HAVBLINK</span> tilbyder vi et bredt udvalg af lækre og friske hvidvine. 
@@ -196,10 +196,9 @@
             </p>
         </div>
 
-        <div id="wine-content-container">
+        <div id="wine-content-container"> <!-- alle vin-containere samles i en anden container/wrapper -->
         
-            <div class="wine-container">
-                
+            <div class="wine-container"> <!-- hver vin er i sin egen div, så det er nemmere at placere dem -->               
                 <img src="images/vinflaske1.jpg" alt="SOLKYS HAVBLINK hvidvin">
                 
                 <h4>
@@ -216,11 +215,11 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+<!-- herefter gentages layouttet, så der er 8 vin-containere i alt -->
+
+            <div class="wine-container">          
                 <img src="images/vinflaske2.jpg" alt="LYSE DAGE HAVBLINK hvidvin">
                 
                 <h4>
@@ -237,11 +236,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+            <div class="wine-container">                
                 <img src="images/vinflaske3.jpg" alt="MORGENDUG HAVBLINK hvidvin">
                 
                 <h4>
@@ -258,11 +255,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+            <div class="wine-container">               
                 <img src="images/vinflaske4.jpg" alt="PERLESOL HAVBLINK hvidvin">
                 
                 <h4>
@@ -279,11 +274,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+            <div class="wine-container">                
                 <img src="images/vinflaske4.jpg" alt="SOLBRISE HAVBLINK hvidvin">
                 
                 <h4>
@@ -300,11 +293,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
             <div class="wine-container">
-
                 <img src="images/vinflaske1.jpg" alt="HAVGULD HAVBLINK hvidvin">
                     
                 <h4>
@@ -321,11 +312,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+            <div class="wine-container">              
                 <img src="images/vinflaske5.jpg" alt="SOLSTUNDER HAVBLINK hvidvin">
                 
                 <h4>
@@ -342,11 +331,9 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
-            <div class="wine-container">
-                
+            <div class="wine-container">               
                 <img src="images/vinflaske2.jpg" alt="GULDFLIMREN HAVBLINK hvidvin">
                 
                 <h4>
@@ -363,7 +350,6 @@
                         LÆS MERE
                     </span>
                 </a>
-
             </div>
 
         </div>
@@ -381,7 +367,7 @@
     </main>
 
     <footer>
-        <div id="footer-container">
+        <nav id="footer-container">
             <div id="footer-container1">
                 <div>
                     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -442,7 +428,7 @@
                 <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
                 <p>Telefon: 44 88 15 65</p>
             </div>
-        </div>
+        </nav>
     </footer>
 
 <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->

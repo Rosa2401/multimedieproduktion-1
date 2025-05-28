@@ -179,11 +179,11 @@
         </div>
     </header>
 
-<!----------------- MAIN CONTENT ----------------->
+<!-- MAIN CONTENT -->
 
     <main>
 
-        <div id="artikler-hero">
+        <div id="artikler-hero"> <!-- hero er i sin egen div, så den placeres separat fra andet content -->
             <img src="images/hvidvinsglas3.jpg" alt="Frisk HAVBLINK hvidvin med havet i baggrunden">
             <h1>ARTIKLER</h1>
             <p>
@@ -198,16 +198,16 @@
                 </svg>
             </div>
 
-            <p id="news-info">
+            <p id="news-info"> <!-- teksten er gentaget her, fordi <p> i hero skjules ved 1024px, og flyttes ned under heroen -->
                 Hold dig opdateret om <span>HAVBLINK</span> - fra kommende begivenheder og bæredygtige tiltag til lanceringen af vores nye vin her.
             </p>
 
-            <div id="news-info-line" class="line"> 
+            <div id="news-info-line" class="line"> <!-- først synligt ved 1024px, tilføjet for at bryde layouttet op -->
             </div>
 
             <div class="news-container">
 
-                <section class="text-wrapper"> <!-- denne er gennengående på sitet, og stylet i styles.css - den er desuden en section for bedre SEO og pga. der er en header -->
+                <section class="text-wrapper"> <!-- denne er gennengående på sitet, og stylet i styles.css - den er desuden en section for bedre SEO og pga. den indeholder en h3 -->
                     
                     <h3>
                         Vores Første Solaris-Høst
@@ -223,7 +223,7 @@
                     </p>
                     <br class="hidebr"> <!-- dette <br> findes også adskillige steder i koden og har fået en class fordi den skjules i responsivt design -->
 
-                    <a class="link-text" href="#">
+                    <a class="link-text" href="#"> <!-- denne har en class, da den skal skjules ved 768px -->
                         Klik her for at læse hele historien.
                     </a>
 
@@ -241,7 +241,7 @@
                 </span>
             </a>
 
-            <div class="line"> 
+            <div class="line"> <!-- kunne også laves som span, er tilføjet for at bryde layout lidt op -->
             </div>
 
             <div class="news-container news-container2">
@@ -267,13 +267,13 @@
                     </p>
                     <br class="hidebr">
 
-                    <a class="link-text" href="#">
+                    <a class="link-text" href="#"> <!-- har en class, da den skjules ved 768px -->
                         Klik her for at læse mere og tilmelde dig.
                     </a>
 
                 </section>
 
-                <a class="button2" href="#">
+                <a class="button2" href="#"> <!-- skjult indtil 768px -->
                     <span>
                         LÆS MERE
                     </span>
@@ -361,16 +361,16 @@
 
         </div>
 
-        <div class="line2"> 
+        <div class="line2"> <!-- har en class, da den er skjult indtil 768px -->
         </div>
 
-        <div id="search-container">
-            <div id="back-next">
+        <div id="search-container"> <!-- container under primært indhold, der indholder pile til navigering gennem et nyhedsarkiv (er dog ikke funktionelle) -->
+            <div id="back-next"> <!-- alle 3. elementer er samlet i en div, så de er nemmere at placere rigtigt - f.eks. med lige stort mellemrum mellem pilene og knappen -->
                 <svg id="back" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.33 44.33">
                     <path class="cls-1" d="M41.17,0l-4.47,4.46,14.5,14.54H0v6.33h51.2l-14.53,14.53,4.5,4.47,22.17-22.17L41.17,0Z"/>
                 </svg>
 
-                <a class="button4" href="#">
+                <a class="button4" href="#"> <!-- denne knap er skjult indtil 768px -->
                     <span>
                         NYHEDSARKIV
                     </span>
@@ -381,7 +381,7 @@
                 </svg>
             </div>
 
-            <a class="button3" href="#">
+            <a class="button3" href="#"> <!-- denne knap skjules ved 768px-->
                 <span>
                     NYHEDSARKIV
                 </span>
@@ -399,7 +399,7 @@
     </main>
 
     <footer>
-        <div id="footer-container">
+        <nav id="footer-container">
             <div id="footer-container1">
                 <div>
                     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -414,12 +414,12 @@
 
                 <div id="footer-social-media">
                     <a href="#">
-                        <svg id="some-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                        <svg class="some-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
                             <path d="M400,229.6c-94.1,0-170.4,76.3-170.4,170.4s76.3,170.4,170.4,170.4,170.4-76.3,170.4-170.4h0c-.1-94-76.3-170.3-170.4-170.4h0ZM400,481.5c-45,0-81.5-36.5-81.5-81.5s36.5-81.5,81.5-81.5,81.5,36.5,81.5,81.5-36.5,81.4-81.5,81.5ZM577.8,0H222.2C99.5.1.1,99.5,0,222.2v355.6c.1,122.7,99.5,222.1,222.2,222.2h355.6c122.7-.1,222.1-99.5,222.2-222.2V222.2C799.9,99.5,700.5.1,577.8,0ZM711.1,577.8c0,73.6-59.7,133.3-133.3,133.3H222.2c-73.6,0-133.3-59.7-133.3-133.3V222.2c0-73.6,59.7-133.3,133.3-133.3h355.6c73.6,0,133.3,59.7,133.3,133.3v355.6ZM651.9,207.4c0,32.7-26.5,59.3-59.3,59.3s-59.3-26.5-59.3-59.3,26.5-59.3,59.3-59.3,59.2,26.5,59.3,59.3h0Z"/>
                         </svg>
                     </a>
                     <a href="#">
-                         <svg id="some-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 507.14">
+                         <svg class="some-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 507.14">
                             <path d="M509,254.5C509,113.94,395.06,0,254.5,0S0,113.94,0,254.5c0,119.36,82.17,219.5,193.02,247.01v-169.24h-52.48v-77.77h52.48v-33.51c0-86.63,39.2-126.78,124.24-126.78,16.13,0,43.95,3.17,55.33,6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73,0-57.86,15.81-57.86,56.91v27.5h83.13l-14.28,77.77h-68.85v174.87c126.02-15.22,223.67-122.52,223.67-252.64Z"/>
                         </svg>
                     </a>
@@ -460,8 +460,7 @@
                 <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
                 <p>Telefon: 44 88 15 65</p>
             </div>
-        </div>
-        
+        </nav>   
     </footer>
 
     <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->

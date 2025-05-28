@@ -181,12 +181,12 @@
 
     <main>
 
-        <div id="visit-hero">
+        <div id="visit-hero"> <!-- hero er i sin egen div, så den placeres separat fra andet content -->
             <img src="images/vinmark9-2.jpg" alt="HAVBLINKs vinmarker med det sydfynske hav i baggrunden">
             <h1>KOM PÅ BESØG OG SE VINMARKERNE</h1>
         </div>
 
-        <div id="visit-container">
+        <div id="visit-container"> <!-- container/wrapper til baggrunds-svg og datoer/billede -->
 
             <div id="background-wave">
                 <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
@@ -194,13 +194,13 @@
                 </svg>
             </div>
 
-            <div id="events-container">
-                <div id="events">
+            <div id="events-container"> <!-- datoer og billede i en separat div -->
+                <div id="events"> <!-- alle <p> og en knap i en div for sig selv, de skulle stå til venstre, mens billedet skulle stå separat til højre -->
                     <h4>
                         ARRANGEMENTER I JULI
                     </h4>
                     <br>
-                    <p>
+                    <p> <!-- hver dato skal være i sin egen paragraf -->
                         2/7 - Vinmarksyoga
                     </p>
                     <p>
@@ -238,7 +238,7 @@
                     </a>
                 </div>
 
-                 <div id="events-img-wrapper" class="img-wrapper">
+                 <div id="events-img-wrapper" class="img-wrapper"> <!-- billed-wrapper, der gør det nemmere at justere størrelse på billedet -->
                     <img src="images/vinmark11.jpg" alt="HAVBLINKs vinmarker med det sydfynske hav i baggrunden">
                 </div>
             </div>
@@ -397,7 +397,7 @@
     </main>
 
     <footer>
-        <div id="footer-container">
+        <nav id="footer-container">
             <div id="footer-container1">
                 <div>
                     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -458,7 +458,7 @@
                 <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
                 <p>Telefon: 44 88 15 65</p>
             </div>
-        </div>
+        </nav>
     </footer>
 
     <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->

@@ -180,7 +180,7 @@
 
     <main>
 
-        <div id="info-hero">
+        <div id="info-hero"> <!-- hero er i sin egen div, så den placeres separat fra andet content -->
             <img src="images/druer5.jpg" alt="Solarisdruer klar til høst hos HAVBLINK">
             <h1>BÆREDYGTIGHED</h1>
             <h4>
@@ -188,16 +188,16 @@
             </h4>
         </div>
 
-        <div class="info-content">
+        <div class="info-content"> <!-- wrapper til alle elementer herunder -->
 
-            <div class="info-container"> 
+            <div class="info-container"> <!-- container/wrapper til første afsnit om transport -->
 
-                <div class="img-wrapper">
+                <div class="img-wrapper"> <!-- billede og tekst-wrapper i hver sit element, for at kunne placere nemmere, f.eks. når layout skiftes fra row til column -->
                     <img src="images/vintransport.jpg" alt="HAVBLINK vinflasker på transportvogn">
                 </div>
 
-                <section class="text-wrapper">
-
+                <section class="text-wrapper"> <!-- er en section, da elementet indeholder en h3 -->
+                    <!-- alt tekst er samlemt i en div, så det kan placeres samlet, men stadig separat fra billedet -->
                     <h3>
                         Lokal Forankring
                     </h3>
@@ -218,22 +218,21 @@
                         Lokal produktion gør vores vin mere bæredygtig - og langt mere personlig. 
                         Når du smager <span>HAVBLINK</span>, smager du også landskabet, historien og det fællesskab, der omgiver det.
                     </p>
-
                 </section>
             </div>
 
-                <div id="background-wave">
+                <div id="background-wave"> <!-- .svg-fil brugt som baggrund, tilføjer pynt til baggrunden -->
                     <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
                         <path class="cls-1" d="M1510.54,53c-10.31-8-27.83-15.89-40.31-19.99-23.65-7.7-48.31-11.78-73.01-14.36-396.67-47.61-345.05,237.22-816.59,57.8C421.36,15.92,245.71-43.04,85.72,43.92,54.88,59.84,25.76,79.68,0,103.09v67.87h1512V54.11c-.45-.38-.99-.75-1.46-1.11Z"/>
                     </svg>
                 </div>
 
-            <div id="info-background-container">
+            <div id="info-background-container"> <!-- jeg kunne ikke skifte baggrundsfarven og få placeret alting rigtigt uden af tilføje denne div -->
 
-                <div class="info-container" id="info-container2">
+                <div class="info-container" id="info-container2"> <!-- udover det er layouttet mere eller mindre det samme, med undtagelse af at billede i denne 
+                    div er placeret i bundet fremfor toppen, da det på desktop skal stå til højre, altså efter teksten -->
 
                     <section class="text-wrapper">
-
                         <h3>
                             Økologisk Omsorg
                         </h3>
@@ -254,7 +253,6 @@
                         <p>
                             Hver flaske <span>HAVBLINK</span> er et lille bevis på, at ansvar og nydelse sagtens kan gå hånd i hånd.
                         </p>
-
                     </section>
 
                     <div class="img-wrapper">
@@ -269,8 +267,7 @@
                     <img src="images/druer4.jpg" alt="Solarisdruer klar til høst hos HAVBLINK">
                 </div>
 
-                <section class="text-wrapper">
-                    
+                <section class="text-wrapper">                  
                     <h3>
                         Biodynamisk Balance
                     </h3>
@@ -292,7 +289,6 @@
                         Vi ser det som en måde at bringe endnu mere dybde og energi ind i vores vine. 
                         Når vi arbejder med naturen i stedet for imod den, opstår der en særlig harmoni i både processen og smagen.
                     </p>
-
                 </section>
             </div>
         </div>
@@ -309,7 +305,7 @@
     </main>
     
     <footer>
-        <div id="footer-container">
+        <nav id="footer-container">
             <div id="footer-container1">
                 <div>
                     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -370,7 +366,7 @@
                 <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
                 <p>Telefon: 44 88 15 65</p>
             </div>
-        </div>
+        </nav>
     </footer>
     
         <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->

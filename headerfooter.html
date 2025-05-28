@@ -10,20 +10,20 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="havblink">
+        <div class="header-container"> <!-- hele headeren i den samme container -->
+            <div class="havblink"> <!-- logoet for sig selv, da det skal bruges til både desktop og mobil menu -->
                 <a href="/">
-                    <img src="assets/logo-duo.svg" id="havblink-logo" alt="HAVBLINK logo" class="logo_header">
+                    <img src="assets/logo-duo.svg" id="havblink-logo" alt="HAVBLINK logo" class="logo_header"> <!-- klikbart - sender brugen tilbage til forsiden -->
                 </a>
             </div>
 
-            <div id="nav-bar">
-                <div id="nav-desktop">
+            <div id="nav-bar"> <!-- al header-navigering udover logo i samme container -->
+                <div id="nav-desktop"> <!-- start på header på desktop, alle elementer samles i denne div -->
                     <nav>
                         <ul class="pc-nav-links">
                             <li class="pc-dropdown">
-                                <span class="pc-menu-point">VINGÅRDEN</span>
-                                <ul class="pc-menu">
+                                <span class="pc-menu-point">VINGÅRDEN</span> <!-- åbner dropdown menuen -->
+                                <ul class="pc-menu"> <!-- dropdown-menuer lavet som uordnet lister -->
                                     <li><a href="besøg.html">BESØG VINGÅRDEN</a></li>
                                     <li><a href="#">BEGIVENHEDER</a></li>
                                     <li><a href="#">MARK & VINERI</a></li>
@@ -36,8 +36,8 @@
                             </li>
 
                             <li class="pc-dropdown">
-                                <span class="pc-menu-point">VORES VIN</span>
-                                <ul class="pc-menu">
+                                <span class="pc-menu-point">VORES VIN</span> <!-- åbner dropdown menuen -->
+                                <ul class="pc-menu"> <!-- dropdown-menuer lavet som uordnet lister -->
                                     <li><a href="hvidvine.html">HVIDVIN</a></li>
                                     <li><a href="#">ROSÉ</a></li>
                                     <li class="dropdown-a-bottom"><a href="#">RØDVIN</a></li>
@@ -45,8 +45,8 @@
                             </li>
 
                             <li class="pc-dropdown">
-                                <span class="pc-menu-point">PRESSE</span>
-                                <ul class="pc-menu">
+                                <span class="pc-menu-point">PRESSE</span> <!-- åbner dropdown menuen -->
+                                <ul class="pc-menu"> <!-- dropdown-menuer lavet som uordnet lister -->
                                     <li><a href="artikler.html">ARTIKLER</a></li>
                                     <li><a href="#">ANMELDELSER</a></li>
                                     <li class="dropdown-a-bottom"><a href="#">PRÆMIERINGER</a></li>
@@ -54,8 +54,8 @@
                             </li>
 
                             <li class="pc-dropdown">
-                                <span class="pc-menu-point">OM OS</span>
-                                <ul class="pc-menu">
+                                <span class="pc-menu-point">OM OS</span> <!-- åbner dropdown menuen -->
+                                <ul class="pc-menu"> <!-- dropdown-menuer lavet som uordnet lister -->
                                     <li><a href="#">VORES HISTORIE</a></li>
                                     <li><a href="bæredygtighed.html">BÆREDYGTIGHED</a></li>
                                     <li><a href="#">GALLERI</a></li>
@@ -69,10 +69,10 @@
 
 <!-- RESPONSIVE HEADER -->
 
-                <div class="nav-mobil-container">
-                    <input type="checkbox" id="mobil-menu-toggle">
-                    <label for="mobil-menu-toggle" id="hamburger"> 
-                            <span></span>
+                <div class="nav-mobil-container"> <!-- start på reponsiv header -->
+                    <input type="checkbox" id="mobil-menu-toggle"> <!-- overordnet menu er lavet som en checkbox menu -->
+                    <label for="mobil-menu-toggle" id="hamburger"> <!-- label for checkbox aka det der skal trykkes på for at åbne menuen -->
+                            <span></span> <!-- lavet af 2 <span> der er stylet som et burger-ikon i styles.css -->
                             <span></span>
                     </label>
 
@@ -80,15 +80,15 @@
                         <div id="nav-mobil-content">
                             <ul class="nav-mobil-links">
 
-                                <li class="mobil-dropdown">
+                                <li class="mobil-dropdown"> <!-- jeg har tilføjet 4 checkbox menuer i burgermenuen, dette er den første -->
                                     <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle1">
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle1">
-                                    <span class="mobil-submenu-open">
+                                    <span class="mobil-submenu-open"> <!-- her er label for checkbox "VINGÅRDEN" og et lille pilikon"-->
                                         <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                         VINGÅRDEN
                                     </span>
                                     </label>
-                                    <ul class="mobil-submenu" id="mobil-submenu1">
+                                    <ul class="mobil-submenu" id="mobil-submenu1"> <!-- undermenuen der åbnes -->
                                         <li><a href="besøg.html">BESØG VINGÅRDEN</a></li>
                                         <li><a href="#">BEGIVENHEDER</a></li>
                                         <li><a href="#">MARK & VINERI</a></li>
@@ -100,45 +100,45 @@
                                     <a href="#">BUTIK</a>
                                 </li>
 
-                                <li class="mobil-dropdown">
+                                <li class="mobil-dropdown"> <!-- start på 2. checkbox menu -->
                                     <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle2">
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle2">
-                                        <span class="mobil-submenu-open">
+                                        <span class="mobil-submenu-open"> <!-- her er label for checkbox "VORES VIN" og et lille pilikon"-->
                                             <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                             VORES VIN
                                         </span>
                                     </label>
-                                    <ul class="mobil-submenu" id="mobil-submenu2">
+                                    <ul class="mobil-submenu" id="mobil-submenu2"> <!-- undermenuen der åbnes -->
                                         <li><a href="hvidvine.html">HVIDVINE</a></li>
                                         <li><a href="#">ROSÉ</a></li>
                                         <li><a href="#">RØDVIN</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="mobil-dropdown">
+                                <li class="mobil-dropdown"> <!-- start på 3. checkbox menu -->
                                     <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle3">
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle3">
-                                        <span class="mobil-submenu-open">
+                                        <span class="mobil-submenu-open"> <!-- her er label for checkbox "PRESSE" og et lille pilikon"-->
                                             <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                             PRESSE
                                         </span>
                                     </label>
-                                    <ul class="mobil-submenu" id="mobil-submenu3">
+                                    <ul class="mobil-submenu" id="mobil-submenu3"> <!-- undermenuen der åbnes -->
                                         <li><a href="artikler.html">ARTIKLER</a></li>
                                         <li><a href="#">ANMELDELSER</a></li>
                                         <li><a href="#">PRÆMIERINGER</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="mobil-dropdown">
+                                <li class="mobil-dropdown"> <!-- start på 4. checkbox menu -->
                                     <input type="checkbox" name="mobil-submenu-toggle" class="mobil-submenu-toggle" id="mobil-submenu-toggle4">
                                     <label class="mobil-toggle-label" for="mobil-submenu-toggle4">
-                                        <span class="mobil-submenu-open">
+                                        <span class="mobil-submenu-open"> <!-- her er label for checkbox "OM OS" og et lille pilikon"-->
                                             <img src="assets/open-this.svg" class="open-this" alt="åben denne ikon">
                                             OM OS
                                         </span>
                                     </label>
-                                    <ul class="mobil-submenu" id="mobil-submenu4">
+                                    <ul class="mobil-submenu" id="mobil-submenu4"> <!-- undermenuen der åbnes -->
                                         <li><a href="artikler.html">VORES HISTORIE</a></li>
                                         <li><a href="#">BÆREDYGTIGHED</a></li>
                                         <li><a href="#">GALLERI</a></li>
@@ -147,11 +147,11 @@
                                     </ul>
                                 </li>
 
-                                <li id="header-social-media"> <!-- nederst i menuer er deres SoMe-ikoner til Instagram og Facebook - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
+                                <li id="header-social-media"> <!-- nederst i menuer er deres SoMe-ikoner til Instagram og Facebook - også i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
                                     <ul>
                                         <li>
-                                            <a href="#">
-                                                <svg class="some-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                                            <a href="#"> <!-- begge ikoner fungerer som links til SoMe-sider (er dog døde links) -->
+                                                <svg class="some-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> <!-- jeg har valgt .svg fremfor .png for at de kan ændre farve ved hover -->
                                                     <path d="M400,229.6c-94.1,0-170.4,76.3-170.4,170.4s76.3,170.4,170.4,170.4,170.4-76.3,170.4-170.4h0c-.1-94-76.3-170.3-170.4-170.4h0ZM400,481.5c-45,0-81.5-36.5-81.5-81.5s36.5-81.5,81.5-81.5,81.5,36.5,81.5,81.5-36.5,81.4-81.5,81.5ZM577.8,0H222.2C99.5.1.1,99.5,0,222.2v355.6c.1,122.7,99.5,222.1,222.2,222.2h355.6c122.7-.1,222.1-99.5,222.2-222.2V222.2C799.9,99.5,700.5.1,577.8,0ZM711.1,577.8c0,73.6-59.7,133.3-133.3,133.3H222.2c-73.6,0-133.3-59.7-133.3-133.3V222.2c0-73.6,59.7-133.3,133.3-133.3h355.6c73.6,0,133.3,59.7,133.3,133.3v355.6ZM651.9,207.4c0,32.7-26.5,59.3-59.3,59.3s-59.3-26.5-59.3-59.3,26.5-59.3,59.3-59.3,59.2,26.5,59.3,59.3h0Z"/>
                                                 </svg>
                                             </a>
@@ -177,7 +177,7 @@
 
         <!-- Tilføjet footer wave til <main>, for at undgå position:absolute i footer -->
 
-        <div id="footer-wave">
+        <div id="footer-wave"> <!-- laver som .svg fremfor .png, så den skalerer pænere -->
             <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 170.96">
                 <path class="cls-1" d="M1510.54,53c-10.31-8-27.83-15.89-40.31-19.99-23.65-7.7-48.31-11.78-73.01-14.36-396.67-47.61-345.05,237.22-816.59,57.8C421.36,15.92,245.71-43.04,85.72,43.92,54.88,59.84,25.76,79.68,0,103.09v67.87h1512V54.11c-.45-.38-.99-.75-1.46-1.11Z"/>
             </svg>
@@ -186,9 +186,9 @@
     </main>
 
     <footer>
-        <div id="footer-container">
+        <nav id="footer-container">
             <div id="footer-container1">
-                <div>
+                <div> <!-- Google Maps udsnit - dog er adresse-->
                     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.269187318505!2d10.52527371244488!3d55.056019972721025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d32a2d17479ed%3A0xb8063d75f4b1d369!2sHelleg%C3%A5rdsvej%20267%2C%205700%20Svendborg!5e0!3m2!1sen!2sdk!4v1747654699498!5m2!1sen!2sdk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -199,7 +199,7 @@
                     <br>
                 </div>
 
-                <div id="footer-social-media">
+                <div id="footer-social-media"> <!-- sat i en div, så de er nemmere at placere -->
                     <a href="#">
                         <svg class="some-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
                             <path d="M400,229.6c-94.1,0-170.4,76.3-170.4,170.4s76.3,170.4,170.4,170.4,170.4-76.3,170.4-170.4h0c-.1-94-76.3-170.3-170.4-170.4h0ZM400,481.5c-45,0-81.5-36.5-81.5-81.5s36.5-81.5,81.5-81.5,81.5,36.5,81.5,81.5-36.5,81.4-81.5,81.5ZM577.8,0H222.2C99.5.1.1,99.5,0,222.2v355.6c.1,122.7,99.5,222.1,222.2,222.2h355.6c122.7-.1,222.1-99.5,222.2-222.2V222.2C799.9,99.5,700.5.1,577.8,0ZM711.1,577.8c0,73.6-59.7,133.3-133.3,133.3H222.2c-73.6,0-133.3-59.7-133.3-133.3V222.2c0-73.6,59.7-133.3,133.3-133.3h355.6c73.6,0,133.3,59.7,133.3,133.3v355.6ZM651.9,207.4c0,32.7-26.5,59.3-59.3,59.3s-59.3-26.5-59.3-59.3,26.5-59.3,59.3-59.3,59.2,26.5,59.3,59.3h0Z"/>
@@ -216,7 +216,7 @@
             <div class="footer-container2">
                 <h4>ÅBNINGSTIDER</h4>
                 <br>
-                <div id="åbningstider">
+                <div id="åbningstider"> <!-- sat i en div, så de er nemmere at style separat fra andet footer content -->
                     <p>Mandag - lukket</p>
                     <p>Tirsdag - lukket</p>
                     <p>Onsdag- kl. 10-15</p>
@@ -235,19 +235,19 @@
             <div class="footer-container2">
                 <h4>KUNDESERVICE</h4>
                 <br>
-                <p><a href="#">Om HAVBLINK</a></p>
+                <p><a href="#">Om HAVBLINK</a></p> <!-- kunne også laves som en ul, men her bare brugt <p> -->
                 <p><a href="#">Butik</a></p>
                 <p><a href="#">Forhandlere</a></p>
                 <p><a href="#">Betingelser & Vilkår</a></p>
                 <p><a href="#">Privatlivspolitik</a></p>
                 <p><a href="#">Cookies</a></p>
                 <br>
-                <br class="hidebr">
+                <br class="hidebr"> <!-- er i en class, fordi de gemmes i responsiv footer-->
                 <br class="hidebr">
                 <p>Email: <a href="mailto:eaa25roch@students.eaaa.dk">support@havblink.dk</a></p>
                 <p>Telefon: 44 88 15 65</p>
             </div>
-        </div>
+        </nav>
     </footer>
 
     <!-- AI hjælp til at lave burger-ikonet flot og til kun at holde en checkbox åben ad gangen i responsiv header -->
